@@ -28,7 +28,11 @@ li a:hover {
     text-align: center;
 }
 .content {
-    text-align: center;
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgb(189, 250, 132);
+    padding: 10px;
+    border-radius: 20px;
 }
 @media only screen and (max-width: 600px) {
     body {
@@ -40,4 +44,10 @@ li a:hover {
     li a {
         justify-content: center;
     }
+}
+body {
+    font-family: 'Fjalla One', sans-serif;
+}
+.inter {
+    width: 550px;
 }
