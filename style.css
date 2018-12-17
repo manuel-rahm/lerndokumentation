@@ -20,14 +20,13 @@ li a {
 li a:hover {
     background-color: #111;
 }
-.logo {
-    height: 150px;
-    width: auto;
-    float: right;
-    margin: 80px 100px 0px 0px;
-}
 .titelbild {
     width: 300px;
     display: block;
-    margin: 0px auto 0px auto;
+    margin: auto auto auto auto;
+    text-align: center;
+}
+.content {
+    width: 500px;
+    text-align: center;
 }
