@@ -8,18 +8,18 @@ ul {
   }
 li {
     float: right;
-    background-color: #333;
+    background-color: rgb(179, 179, 179);
     position: relative;
 }
 li a {
     display: flex;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 li a:hover {
-    background-color: #111;
+    background-color: rgb(221, 221, 221);
 }
 .titelbild {
     width: 300px;
@@ -98,4 +98,14 @@ body {
 .aufbau-element {
     width: 545px;
     padding: 20px 0px 0px 0px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: right;
+    opacity: 0.35;
 }
