@@ -36,7 +36,7 @@ li a:hover {
 }
 @media only screen and (max-width: 600px) {
     body {
-        background-color: aqua;
+        background-color: rgb(255, 255, 255);
     }
     nav ul {
         flex-direction: column;
@@ -79,3 +79,18 @@ body {
     padding: 10px;
     border-radius: 20px;
 }
+.olli {
+    float: left;
+    background:none;
+    
+}
+.ol {
+    display: flex;
+    flex-direction: column;
+}
+.ide {
+    max-width: 550px;
+    margin: 20px auto 20px auto;
+    background: rgb(209, 111, 255);
+    padding: 10px;
+    border-radius: 20px;
