@@ -248,8 +248,65 @@
                 dass seine Besucher zu dem Fenster mit seiner eigenen Webseite zurückkehren, nachdem Sie sich den Inhalt der anderen angesehen haben.
                 Im Allgemeinen sollten Sie darauf verzichten, Links in neuen Fenstern zu öffnen. Wenn Sie es aber tun, sollten Sie die Benutzer darüber informieren, bevor sie auf den Link klicken.
                 <h2>Bilder</h2>
-                
-                        </p>
+                Wenn Sie eine Webseite neu erstellen, ist es bewährte Praxis, einen für alle verwendeten Bilder anzulegen.
+                <h3>Bilder hinzufügen</h3>
+                <h4>img</h4>
+                Um Bilder zu einer Seite hinzuzufügen verwenden Sie das Element "img". Dies ist ein leeres Element. Die folgenden beiden Attribute müssen enthalten sein:
+                <h4>src</h4>
+                Dieses Attribut sagt dem Browser, wo die Bilddatei zu finden ist. Der Wert ist gewöhnlich ein relativer URL, der auf ein Bild auf Ihrer eigenen Webseite zeigt. 
+                <h4>alt</h4>
+                Dieses Attribut bietet eine Beschreibung des Bildes in Textform für den Fall, dass das Bild nicht zu sehen sein sollte.
+                <h4>title</h4>
+                Sie können im Element "img" auch das Attribut "title" verwenden, zm zusätzliche Informationen über das Bild anzugeben. Die meisten Browser zeigen den Inhalt dieses Attributs in einem kleinen 
+                Informationsfeld an, wenn der Besucher mit dem Mauszeiger über das Bild fährt.
+                <h3>Höhe und Breite von Bildern</h3>
+                Häufig werden in img-Elementen noch zwei weitere Attribute verwendet, die die Grösse angeben:
+                <h4>height</h4>
+                Gibt die Höhe des Bildes in Pixeln an. Kann aber auch ein em-Wert sein oder %.
+                <h4>width</h4>
+                Gibt die Breite des Bildes an.
+                <br/>
+                Es dauert meistens länger, die Bilder zu laden, als den HTML-Code, der den Rest der Seite ausmacht. Daher ist es sinnvoll, die Bildgrösse anzugeben, sodass der Browser den Rest der Seite schon einaml darstellen
+                und dabei ausreichend Platz für das Bild lassen kann, das noch geladen wird.
+                Die Grösse von Bildern wird immer häufiger mit CSS angegeben.
+                <h3>Bildformate</h3>
+                <h4>JPEG</h4>
+                Wenn ein Bild viele verschiedene Farben enthält, sollten Sie das Format JPEG verwenden. Fotos mit Schneelandschaften oder bewölktem Himmel wirken zwar so, als enthielten sie grosse Flächen aus derselben Farbe
+                , aber in Wirklichkeit besteht das Bild aus vielen verschiedenen Farben mit feinen unterschiedlichen Nuancen.
+                <h4>GIF/PNG</h4>
+                Verwenden Sie die Formate GIF oder PNG für Bilder mit wenigen Farben oder grossen einfarbigen Flächen.
+                Wenn ein Bildbereich durchgängig mit genau derselben Farbe ausgefüllt ist, spricht man von flachen Farben. Das ist häufig in Logos, Zeichnungen und Diagrammen der Fall.
+                Fotos von Schnee, von Gras oder vom Himmel weisen jedoch keine flachen Farben auf, sondern viele verschiedene Nuancen einer Farbe, weshalb die Formate GIF und PNG dafür nicht so gut geeignet sind.
+                <h3>Bildunterschriften</h3>
+                <h4>figure</h4>
+                Bilder weisen oft eine Unterschrift auf. In HTML5 gibt es das neue Element "figure", das ein Bild und seine Unterschrift einschliess, sodass sie zusammenhängen.
+                Wenn sich mehrere Bilder dieselbe Unterschrift teilen, können in einem figure-Element auch mehrere Bilder stehen.
+                <h4>figcaption</h4>
+                Das Element "figcaption" wurde in HTML5 hinzugefügt, um Bilder mit Untreschriften zu versehen.
+                Bevor diese Elemente zur Verfügung gestellt wurden, gab es keine Möglichkeit, um ein img-Element mit seiner Bildunterschrift zu verknüpfen.
+                <h2>Tabellen</h2>
+                Es gibt verschiedene Arten von Informationen, die in einem Raster oder einer Tabelle dargestellt werden müssen.
+                Dafür hat HTML auch einige Funktionen.
+                <h3>Grundlegende Tabellenstruktur</h3>
+                <h4>table</h4>
+                Tabellen werden mit dem Element "table" erstellt. Die Inhalte der Tabelle werden Zeile für Zeile geschrieben.
+                <h4>tr</h4>
+                Den Beginn einer Zeile markieren Sie jeweils mit dem öffnenden tr-Tag (tr=table row). Darauf folgt jeweil ein td-Element für jede Zelle in der Zeile.
+                Am Ende der Zeile geben Sie das schliessende tr-Tag an.
+                <h4>td</h4>
+                Die einzelnen Zellen einer Tabelle werden durch td-Elemente (td=Tabellendaten) dargestellt. Am Ende jeder Zelle steht jeweils ein schliessendes td-Tag.
+                <h3>Tabellenüberschriften</h3>
+                Das Element "th" (table heading) wird ebenso verwendet wie "td", steht aber für die Überschrift einer Spalte oder Zeile. 
+                Hat eine Zelle keinen Inhalt, müssen Sie trotzdem das Element "td" oder "th" verwenden, um das Vorhandensein der leeren Zelle zu kennzeichnen, da die Tabelle ansonsten
+                falsch dargestellt wird.
+                <br/>
+                Überschriften, die Sie mit "th" hinzufügen, sind hilfreich für Personen, die Screenreader einsetzen. Ausserdem können Suchmaschinen Ihre Seiten dann besser indizieren, und Sie können das Erscheinungbild der Tabellen
+                dann besser beeinflussen, wenn Sie anfangen mit CSS zu arbeiten.
+                Mit dem Attribut "scope" von "th" geben Sie an, ob die Überschrift für eine Spalte oder für eine Zeile gilt. Möglich sind die Werte "row" für Zeilen- und "col" für Spaltenüberschriften.
+                Browser zeigen den Inhalt von th-Elementen gewöhnlich fett und in der Zelle zentriert an.
+                <h3>Spalten zusammenfassen</h3>
+                Mit dem "colspan" für die Elemente "th" und "td" können Sie angeben, über wie viele Spalten sich eine Zelle erstecken soll. Umgekehrt geht dies auch mit Zeilen. Dafür ist es das Attribut "rowspan".                  
+            </p>
     </div>
     <div class="css" id="css">
         <h1>CSS</h1>
