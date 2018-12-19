@@ -76,7 +76,7 @@
             synchronisiert werden.
             <br/>
             <h2>Die wichtigsten Bestandteile einer Entwicklungsumgebung für HTML & CSS</h2>
-            <ul class="ul">
+            <ol class="ul">
                 <li class="ulli">Editor</li>
                 <li class="ulli">Browser</li>
                 <li class="ulli">Development Tools</li>
@@ -84,7 +84,7 @@
                 <li class="ulli">Webserver</li>
                 <li class="ulli">Grafik Tools</li>
                 <li class="ulli">Wissensquellen</li>
-            </ul>
+            </ol>
             <br/>
             Leistungsfähige Editoren sind in der Lage, schon beim Eintippen
             den Kontext zu erkennen, und bieten Funktionen zur automatischen
@@ -199,13 +199,13 @@
                 Links sind das Schlüsselmerkmal des Webs, denn damit ist es möglich, sich von einer Webseite zur anderen zu bewegen.
                 Standardmässig werden Ihnen folgende Arten von Links begegnen: 
                 <br/><br/>
-                <ul class="ul">
+                <ol class="ul">
                     <li class="ulli">Link von einer Webseite zu einer anderen</li>
                     <li class="ulli">Links von einer Seite zu einer anderen auf derselben Webseite</li>
                     <li class="ulli">Links von einem Teil einer Webseite zu einem anderen Teil derselben Seite</li>
                     <li class="ulli">Links, die in einem neuen Browserfenster geöffnet werden</li>
                     <li class="ulli">Links, die Ihr E-Mail-Programm starten und eine neue E-Mail-Nachricht mit einer Adresse versehen</li>
-                </ul>
+                </ol>
                 <br/>
                 Links werden mit dem Element "a" erstellt. Die Benutzer können auf alles klicken, was sich zwischen dem öffnenden Tag und dem schliessenden Tag befindet.
                 Zu welcher Seite der Link führt, geben Sie im Attribut href an.
@@ -305,8 +305,89 @@
                 Mit dem Attribut "scope" von "th" geben Sie an, ob die Überschrift für eine Spalte oder für eine Zeile gilt. Möglich sind die Werte "row" für Zeilen- und "col" für Spaltenüberschriften.
                 Browser zeigen den Inhalt von th-Elementen gewöhnlich fett und in der Zelle zentriert an.
                 <h3>Spalten zusammenfassen</h3>
-                Mit dem "colspan" für die Elemente "th" und "td" können Sie angeben, über wie viele Spalten sich eine Zelle erstecken soll. Umgekehrt geht dies auch mit Zeilen. Dafür ist es das Attribut "rowspan".                  
-            </p>
+                Mit dem "colspan" für die Elemente "th" und "td" können Sie angeben, über wie viele Spalten sich eine Zelle erstecken soll. Umgekehrt geht dies auch mit Zeilen. Dafür ist es das Attribut "rowspan".    
+                <h2>Formulare</h2>
+                Mit HTML-Formularen steht Ihnen eine Reihe von Elementen zur Verfügung, um Daten von den Benutzern abzufragen.
+                <h3>Funktionsweise Formulare</h3>
+                Der Benutzer füllt das Formular aus und klickt auf eine Schaltfläche, um die Informationen an einen Server zu übertragen.
+                <ol class="ul">
+                    <li class="ulli">Die Namen der einzelnen Steuerelemente zusammen mit den vom Benutzer eigegebenen oder ausgewählten Werten werden an den Server gesendet.</li>
+                    <li class="ulli">Der Server verarbeitet die Informationen mit einer Programmiersprache wie PHP, C#, VB.net oder Java. Unter Umständen werden die Informationen auch in einer Datenbank gespeichert.</li>
+                    <li class="ulli">Der Server erstellt auf der Grundlage der Empfangenen Informationen eine neue Seite, die er an den Browser zurücksendet.</li>
+                </ol>
+                Ein Formular kann mehrere Steuerelemente enthalten, die jeweils andere Informationen erfassen. Der Server muss wissen, welche Eingabedaten zu welchem Steuerelement gehören.
+                <h3>Aufbau von Formularen</h3>
+                <h4>form</h4>
+                Formularsteuerelemente stehen in einem form-Element. Es muss über das Attribut "action" verfügen und hat gewöhnlich auch die Attribute "method" und "id".
+                <h4>action</h4>
+                Jedes form-Element muss das Attribut "action" aufweisen. Sein Wert ist der URL der Seite auf dem Server, der beim Einreichen des Formulars die Informationen empfängt. 
+                <h4>method</h4>
+                Formulare können mit zwei verschiedenen Methoden gesendet werden: "get" und "post".
+                Bei "get" werden die Werte aus dem Formular an das Ende des URLs angehängt, der im Attribut "action" angegeben ist. Diese Methode eignet sich ideal für:
+                <ol class="ul">
+                    <li class="ulli">Kurze Formulare</li>
+                    <li class="ulli">Abrufen von Daten vom Webserver</li>
+                </ol>
+                Bei der Methode "post" werden die Werte in sogenannten HTTP-Headern gesendet. Verwenden Sie "post" im Allgemeinen bei Formularen der folgenden Art:
+                <ol class="ul">
+                    <li class="ulli">Formulare, in denen Benutzer Dateien hochladen können</li>
+                    <li class="ulli">Lange Formulare</li>
+                    <li class="ulli">Formulare mit sensiblen Daten</li>
+                    <li class="ulli">Formulare, die Informationen zu einer Datenbank hinzufügen oder daraus entfernen</li>
+                </ol>
+                Wird die Methode nicht angegeben, so werden die Formulardaten mit "get" gesendet.
+                <h4>id</h4>
+                Das Attribut "id" wird verwendet, um das Formular eindeutig von anderen Elementen auf der Seite zu unterscheiden.
+                <h4>input</h4>
+                Mit dem Element "input" werden verschiedene Formularsteuerelemente erstellt, deren Art durch den Wert des Attributs "type" bestimmt wird.
+                Hat das Attribut "type" den Wert "text" wird ein einzeiliges Texteingabefeld erzeugt.
+                <h4>name</h4>
+                Wenn Benutzer Informationen in ein Formular eingeben, muss der Server wissen, zu welchem Formularsteuerelement welche Daten gehören. Jedes Formularsteuerelement braucht daher
+                das Attribut "name", dessen WErt das Steuerelement bezeichnet und zusammen mit den eingegebenen Informationen an den Server gesendet wird.
+                <h4>maxlength</h4>
+                Mit dem Attribut "maxlength" geben Sie an, wie viele Zeichen maximal in ein Feld eingetragen werden dürfen, bei einer Jahreszahl könnte das z.B. 4 sein.
+                <h3>Passworteingabe</h3>
+                <h4>type="password"</h4>
+                Hat das Attribut "type" den Wert "password", wird ein Textfeld erstellt, das sich wie ein einzeiliges Texteingabefeld verhält, die eingegebenen Zeichen aber nicht anzeigt.
+                Wenn jemand also dem Benutzer bei der Registrierung über die Schulte blickt, kann er das Passwort nicht lesen.
+                <h4>name</h4>
+                Das Attribut "name" bezeichnet das Passwortfeld und wird zusammen mit dem eingegebenen Passwort an den Server gesandt.
+                <h3>Texteingabe (Mehrzeilig)</h3>
+                <h4>textarea</h4>
+                Mit dem Element "textarea" erstellen Sie ein mehrzeiliges Texteingabefeld. Anders als die anderen Eingabeelemente ist ein solcher Textbereich nicht solcher und muss daher über ein öffnendes und ein schliessendes Tag verfügen.
+                <br/>
+                Text, der zwischen den Tags, wird beim Laden der Seite in dem Textfeld angezeigt.
+                Löscht der Benutzer diesen vorgegebenen Text nicht, wird er zusammen mit der eingegebenen Nachricht an den Server gesendet.
+                <br/>
+                Wenn Sie ein neues Formular erstellen, sollten Sie Breite und Höhe von "textarea" mit CSS festlegen. 
+                <h3>Radio-Buttons</h3>  
+                <h4>input</h4>
+                <h5>type="radio"</h5>
+                Radio-Buttons erlauben es. genau eine von mehreren Optionen auszuwählen.
+                <h5>name</h5>
+                Das Attribut "name" wird zusammen mit dem Wert der vom BNenutzer ausgewählten Option an den Server gesendet. Wenn Sie den Benutzern eine Frage stellen und mehrere Antworten in Form von Radio-Buttons
+                anbieten, muss das Attribut "name" für alle möglichen Atworten zu dieser Frage denselben Wert aufweisen.
+                <h5>value</h5>
+                Das Attribut "value" enthält den Wert, der für die ausgewählte Option an den Server gesendet wird. Die Werte der einzelnen Schalter in einer Gruppe müssen eindeutig sein.
+                <h5>checked</h5>
+                Mit dem Attribut "checked" können Sie angeben, welche Option beim Laden der Seite vorausgewählt sein soll. Der Wert dieses Attributs lautet "checked". In einer
+                Gruppe von Radio-Buttons kann höchstens einer dieses Attribut aufweisen.
+                <h5>type="checkbox"</h5>
+                Bei Checkboxen können Die Benutzer zur Beantwortung einer Frage mehrere Optionen auswählen.
+                <h5>name</h5>
+                Das Attribut "name" wird zusammen mit den Werten der vom Benutzer ausgewählten Optionen an den Server gesendet. Wenn Sie den Benutzern eine Frage stellen und mehrere Antworten in Form von Checkboxen anbieten, muss das Attribut "name"
+                für alle möglichen Antworten zu dieser Frage denselben Wert aufweisen.
+                <h5>value</h5>
+                Das Attribut "value" enthält den Wert, der bei der Auswahl der Checkbox an den Server gesendet wird.
+                <h5>checked</h5>
+                Das Attribut "checked" gibt an, dass die Checkbox beim Laden der Seite vorausgewählt sein soll. Wenn sie dieses Attribut verwenden, geben Sie ihm den Wert "checked".
+                <h4>Dropdownlisten</h4>
+                <h5>select</h5>
+                In einer Dropdownliste können die Benutzer eine Option aus einer herauskappbaren Liste auswählen. Dropdownlisten werden mit dem Element "select" erstellt.
+                Es muss mindestens zwei option-Elemente enthalten. Auch hier kann wieder das Attribut "name" verwendet werden.
+                <h5>option</h5>
+                
+                                    </p>
     </div>
     <div class="css" id="css">
         <h1>CSS</h1>
