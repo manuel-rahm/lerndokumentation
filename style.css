@@ -130,3 +130,7 @@ h5{
 html {
     font-size: 18px;
 }
+.block {
+    width: 500px;
+    padding: 20px 0px 20px 0px;
+}
