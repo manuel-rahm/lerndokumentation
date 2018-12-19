@@ -109,6 +109,24 @@ body {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     text-align: center;
-    opacity: 0.4;
+    opacity: 0.1;
     border-radius: 20px;
+}
+h1{
+    font-size: 250%;
+}
+h2{
+    font-size: 200%;
+}
+h3{
+    font-size: 150%;
+}
+h4{
+    font-size: 112%;
+}
+h5{
+    font-size: 90%;
+}
+html {
+    font-size: 18px;
 }
