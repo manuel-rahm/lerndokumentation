@@ -543,6 +543,51 @@
             <h3>Bilder als Schaltflächen</h3>
             Wenn Sie für die Sendeschaltfläche ein Bild verwenden möchten, geben Sie dem Attribut "type" den Wert "image".
             Die Attribute "src", "width", "height" und "alt" funktionieren hierbei genauso wie beim Element "img".
+            <h3>Schaltflächen  & Versteckte Steuerelemente</h3>
+            <h4>button</h4>
+            Das Element "button" wurde eingeführt, um Webautoren mehr Kontrolle über Erscheinungsbild ihrer Schaltflächen zu geben, ausserdem ist es damit möglich, auch andere Elemente in Schaltflächen
+            aufzunehmen.
+            <h4>input type="hidden"</h4>
+            Solche Elemente sind auf der Seite nicht sichtbar. Dabei können die Autoren von Webseiten ihren Formularen Werte hinzufügen, die für die Benutzer nicht sichtbar sind.
+            <h3>Formularsteuerelemente beschriften</h3>
+            <h4>label</h4>
+            Das Element "label" kann auf zwei Arten verwendet werden:
+            Es kann sowohl die Beschriftung als auch das Steuerelement einschliessen.
+            <br/>
+            Es kann unabhängig von dem Steuerelement im Code stehen und mit dem Attribut "for" angeben, für welches Elemente es da ist.
+            <h5>for</h5>
+            Das Attribut "for" gibt an, zu welchem Steuerelement eine Beschriftung gehört. Die Radio-Buttons in dem Beispiel werden durch den Wert des Attributs "id" eindeutig von alle anderen Elementen auf der 
+            Seite unterschieden. Der Wert des Attributs "for" ist der id-Wert des Steuerelements, zu dem die Beschriftung gehört. Die Attribute "for" und "id" lassen sich für alle Formularsteuerelemente verwenden.
+            Bei einem label-Element für eine Checkbox oder einen Radio-Button können die Benutzer zur Auswahl sowohl auf das eigentliche Steuerelement als auch auf die Beschriftung klicken. Durch diese Erweiterung des anklickbaren Bereichs
+            lässt sich das Formular leichter ausfüllen. Die Position der Beschriftungen ist sehr wichtig. Wenn die Benutzer nichts wissen, wo sie welche Informationen eingeben müssen, werden Sie das Formular wahrscheinlich nicht korrekt ausfüllen.
+            <h3>Formularelemente gruppieren</h3>
+            <h4>fieldset</h4>
+            Gruppen zusammengehöriger Steuerelemente können Sie in einem fieldset-Element zusammenfassen. Das ist vor allem bei umfangreichen Formularen nützlich.
+            Die meisten Browser zeigen um den Rand eines fieldset-Bereichs eine Linie an, um den Zusammenhang zwischen den darin enthaltenen Elementen deutlich zu machen. Das Aussehen dieser Linien können Sie mit CSS anpassen.
+            <h4>legend</h4>
+            Direkt hinter dem öffnenden fieldset-Tag kann das Element "legend" stehen. Es enthält eine Beschriftung, die den Zweck dieser Gruppe von Formularsteuerelementen angibt.
+            <h2>Besonderes Markup</h2>
+            <h3>Die Entwicklung von HTML</h3>
+            Es gab schon einige Vorgängerversionen von HTML. Bei jeder neuen Version wurden neue Elemente und Attribute hinzugefügt und ältere entfernt. Aber durch die neuen Version mussten auch die Browser aktualisiert werden.
+            Einige Leute haben nicht die aktuellste Version ihres Browsers und diese können dann nicht die neueste Version von HTML korrekt verarbeiten. Dies kann zu Fehlanzeigen einer Webseite führen.
+            <h4>Doctype</h4>
+            Da es verschiedene Versionen von HTML gibt, sollte eine Webseite mit einer Dokumenttypdeklaration (DOCTYPE) beginnen, die dem Browser mitteilt, welche dieser Versionen verwendet wird.
+            Für HTML5 gilt als Deklaration: !doctype html in Klammern. 
+            Die Deklaration steht immer ganz am Anfang eines HTML-Dokuments.
+            <h3>Das Attribut ID</h3>
+            Jedes HTML-Element kann das Attribut "id" aufweisen, mit dem das Element von allen anderen Elementen auf der Seite unterschieden wird. Der Wert dieses Attributs muss mit einem
+            Buchstaben oder Unterstrich beginnen, also keine Zahl oder anderen Zeichen.
+            <br/>
+            Zwei Elemente auf dergleichen Seite dürfen nicht denselben Wert für "id" aufweisen.
+            <br/><br/>
+            "id" ist ein globales Attribut, da es für alle Elemente verwendet werden kann. 
+            <h3>Das Attribut Class</h3>
+            Alle HTML-Elemente können auch das Attribut "class" aufweisen. Anstatt ein einzelnes element in eine mDOkument eindeutig zu bezeichnen, ist es manchmal notwendig, mehrere Elemente zu markieren,
+            die sich auf die gleiche Weise von den anderen Elementen auf der Seite abheben sollen.
+            <br/>
+            Es ist auch möglich zwischen Links zu anderen Seiten Ihrer Webseite und Links zu externen Webseiten unterscheiden wollen.
+            Dazu können Sie das Attribut "class" verwenden, dessen Wert die Klasse angibt, z der das Element gehören soll. <br/>
+            Die class-Attribute unterschiedlicher Elemente können den gleichen Wert aufweisen.
         </p>
     </div>
     <div class="css" id="css">
