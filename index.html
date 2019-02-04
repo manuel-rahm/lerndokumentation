@@ -76,7 +76,7 @@
             .com.
             Die Adresse (URL) wird bei Eingabe und Bestätigung im Browser dann nach der IP aufgelöst. Die Daten der
             Webseite werden dann vom Webserver der Seite geladen
-            und man sieht die Seite die man eingegeben hat.
+            und man sieht die Seite, die man eingegeben hat.
         </p>
     </div>
     <div class="ide" id="ide">
@@ -84,10 +84,10 @@
         <p class="text">
             Eine integrierte Entwicklungsumgebung (IDE) stellt Programmierern eine Sammlung der
             wichtigsten Werkzeuge zur Softwareentwicklung unter einer Oberfläche zur Verfügung.
-            Die Arbeit für die Erstellung von Programm wird dadurch vereinfacht. In diesem Falle ist es
+            Die Arbeit für die Erstellung von Programmen wird dadurch vereinfacht. In diesem Falle ist es
             eine IDE für HTML und CSS.
             Da die einzelnen Werkzeuge untereinander Informationen austauschen können. lassen sich viele Arbeitsgänge
-            beim Programmieren (schreiben) vereinfach und beschleunigen. Beispielsweise ist es möglich, Fehler bei der
+            beim Programmieren (schreiben) vereinfachen und beschleunigen. Beispielsweise ist es möglich, Fehler bei der
             Ausführung
             der Programme direkt im Quelltext zu markieren und dadurch einfacher zu beheben. Ohne die Nutzung einer
             integrierten Entwicklungsumgebung müssten verschiedene Programme getrennt voneinander ausgeführt und
@@ -109,7 +109,7 @@
             den Kontext zu erkennen, und bieten Funktionen zur automatischen
             Vervollständigung des Programmcodes. Programmierer müssen deshalb
             nicht mehr die komplette Syntax aller Befehle, Felder oder Variablen
-            exakt kennen, sondern können diese direkt beim Tippen passen auswählen.
+            exakt kennen, sondern können diese direkt beim Tippen passend auswählen.
             Editoren verbessern ausserdem die Lesbarkeit und Übersichtlichkeit
             des Codes, indem sie ihn strukturieren und Befehle oder Variablen eindeutig kennzeichnen.
         </p>
@@ -132,7 +132,7 @@
             <h2>Elemente</h2>
             HTML besteht aus Elementen und Attributen. Ein solches Element besteht aus Tags. Genauer besteht es aus
             einem Start-Tag,
-            Element-Inhalt und einem End-Tag. In einem Start-tag können dann Attribute sein. Ein Attribut ist aus
+            Element-Inhalt und einem End-Tag. In einem Start-Tag können dann Attribute sein. Ein Attribut ist aus
             einem Namen und einem Wert gebildet. Um eine simple Webseite zu erstellen, benötigt man nur einen Editor
             und Webbrowser.
             <br />
@@ -180,12 +180,12 @@
             <h4>b</h4>
             Wenn Sie Wörter mit den "b" Tags umgeben erscheinen sie in Fettschrift.
             Das Element "b" kann auch für einen Textabschnitt stehen, der grafisch auf andere Weise ausgezeichnet
-            werden sollt.
+            werden soll.
             <h4>i</h4>
             Wörter, die mit "i" umgeben sind, erscheinen in Kursivschrift.
             <h3>Exponenten & Indizes</h3>
             <h4>sup</h4>
-            Das Element "sup" umschliess Zeichen, die hochgestellt werden sollen.
+            Das Element "sup" umschliesst Zeichen, die hochgestellt werden sollen.
             <h4>sub</h4>
             Das Element "sub" umschliesst Zeichen, die tiefgestellt werden sollen.
             <h3>Zeilenumbrüche & horizontale Linien</h3>
@@ -197,7 +197,7 @@
             <br />
             Es gibt einige wenige Elemente wie "hr/", bei denen nichts zwischen dem öffnenden und dem schliessenden
             Element steht. Dies sind sogenannte <b>leere Elemente</b>.
-            Ein leeres Element hat gewöhnlich nur ein Tag. Vor der schliessenden spitzen der Klammer stehen ein
+            Ein leeres Element hat gewöhnlich nur ein Tag. Vor der schliessenden Spitze der Klammer stehen ein
             Leerzeichen und ein Schrägstrich.
             <h3>Verstärkung & Hervorhebung</h3>
             <h4>strong</h4>
@@ -218,183 +218,96 @@
             <br />
             In beiden Elementen kann das Attribut "cite" verwendet werden, um die Quelle des Zitats anzugeben. Der Wert
             sollte ein URL mit weiteren Informationen über die Quelle sein.
-            <h2>Listen</h2>
-            In HTML stehen drei verschiedene Arten von Listen zur Verfügung.
-            <dl>
-                <dt>Geordnete Listen (ol)</dt>
-                <dd>In geordneten Listen sind die Einträge durchnummeriert.</dd><br />
-                <dt>Ungeordnete Listen (ul)</dt>
-                <dd>Die Einträge von ungeordneten Listen beginnen mit einem Aufzählungssymbol.</dd><br />
-                <dt>Definitionslisten (dl)</dt>
-                <dd>Definitionslisten bestehen aus Begriffen und ihren Definitionen.
-                    Für die oberen Beiden Listen werden li-Elemente benutzt. Für "dl" wird "dt" und "dd" verwendet.
-                    "dt" gibt den zu definierenden Term an und in "dd" ist die Definition.
-                </dd><br />
-            </dl>
-            <p>Es gibt auch noch die Möglichkeit in einer Liste eine Liste zu erstellen. Dies nennt man dann
-                verschachtelte
-                Liste. Browser zeigen verschachtelte Listen weiter eingerückt an als die übergeordnete Liste. Bei
-                verschachtelten ungeordneten Listen
-                ändert der Browser gewöhnlich auch das Aufzählungssymbol.
-            </p>
-            <h2>Links</h2>
-            Links sind das Schlüsselmerkmal des Webs, denn damit ist es möglich, sich von einer Webseite zur anderen zu
-            bewegen.
-            Standardmässig werden Ihnen folgende Arten von Links begegnen:
-            <br /><br />
+        </div>
+        <div class="html">
+            <h2>Besonderes Markup</h2>
+            <h3>Die Entwicklung von HTML</h3>
+            <p>Es gab schon einige Vorgängerversionen von HTML. Bei jeder neuen Version wurden neue Elemente und Attribute hinzugefügt und ältere entfernt. Aber durch die neuen Version mussten auch die Browser aktualisiert werden.
+            Einige Leute haben nicht die aktuellste Version ihres Browsers und diese können dann nicht die neueste Version von HTML korrekt verarbeiten. Dies kann zu Fehlanzeigen einer Webseite führen.
+            <h4>Doctype</h4>
+            Da es verschiedene Versionen von HTML gibt, sollte eine Webseite mit einer Dokumenttypdeklaration (DOCTYPE) beginnen, die dem Browser mitteilt, welche dieser Versionen verwendet wird.
+            Für HTML5 gilt als Deklaration: !doctype html in Klammern. 
+            Die Deklaration steht immer ganz am Anfang eines HTML-Dokuments.
+            <h3>Das Attribut ID</h3>
+            Jedes HTML-Element kann das Attribut "id" aufweisen, mit dem das Element von allen anderen Elementen auf der Seite unterschieden wird. Der Wert dieses Attributs muss mit einem
+            Buchstaben oder Unterstrich beginnen, also keine Zahl oder anderen Zeichen.
+            <br/>
+            Zwei Elemente auf dergleichen Seite dürfen nicht denselben Wert für "id" aufweisen.
+            <br/><br/>
+            "id" ist ein globales Attribut, da es für alle Elemente verwendet werden kann. 
+            <h3>Das Attribut Class</h3>
+            Alle HTML-Elemente können auch das Attribut "class" aufweisen. Anstatt ein einzelnes element in einem Dokument eindeutig zu bezeichnen, ist es manchmal notwendig, mehrere Elemente zu markieren,
+            die sich auf die gleiche Weise von den anderen Elementen auf der Seite abheben sollen.
+            <br/>
+            Es ist auch möglich, dass Sie zwischen Links zu anderen Seiten Ihrer Webseite und Links zu externen Webseiten unterscheiden wollen.
+            Dazu können Sie das Attribut "class" verwenden, dessen Wert die Klasse angibt, zu der das Element gehören soll. <br/>
+            Die class-Attribute unterschiedlicher Elemente können den gleichen Wert aufweisen.
+            <h3>Blockelemente</h3>
+            Einige Elemente beginnen bei der Anzeige im Browserfenster immer in einer neuen Zeile. Dies sind die sogenannten Blockelemente. Beispiele für Blockelemente sind h1, p, ul und li.
+            Das folgende Bild veranschaulicht das Verhalten von Inline- und Blockelementen.
+            <img class="block" src="img/block-inline.jpeg" alt="block und inline"/>
+            Andere Elemente stehen in derselben Zeile wie ihre Nachbarelemente. Dies sind Inline-Elemente.
+            <h3>Text und Elemente in Blöcken gruppieren mit dem Element "div"</h3>
+            Mit diesem Element werden Elemente in einem Block gruppiert.
+            Dieses Element bietet bessere Ansprechmöglichkeiten für viele ELemente und damit kann man leichter verschiedene Abschnitte gestalten und adressieren.
+            Im Browser starten die Inhalte eines div-Elements in einer neuen Zeile.
+            Ein weiterer Vorteil ist die Übersichtlichkeit in Code. Sinnvoll ist es auch Kommentare hinter einem schliessenden div-Tag anzubringen.
+            <h3>Text und Elemente Inline gruppieren mit Span</h3>
+            Das Element "span" wirkt wie eine Inline-Version von "div". Span wird auf zwei verschiedene Arten eingesetzt.
             <ol class="ul">
-                <li class="ulli">Link von einer Webseite zu einer anderen</li>
-                <li class="ulli">Links von einer Seite zu einer anderen auf derselben Webseite</li>
-                <li class="ulli">Links von einem Teil einer Webseite zu einem anderen Teil derselben Seite</li>
-                <li class="ulli">Links, die in einem neuen Browserfenster geöffnet werden</li>
-                <li class="ulli">Links, die Ihr E-Mail-Programm starten und eine neue E-Mail-Nachricht mit einer
-                    Adresse versehen</li>
+                <li class="ulli">Es enthält einen Textabschnitt, wenn es kein anderes geeignetes Element gibt, zm ihn von dem umgebenden Text abzusetzen.</li>
+                <li class="ulli">Es enthält eine Reihe von Inline-Elementen.</li>
             </ol>
-            <br />
-            Links werden mit dem Element "a" erstellt. Die Benutzer können auf alles klicken, was sich zwischen dem
-            öffnenden Tag und dem schliessenden Tag befindet.
-            Zu welcher Seite der Link führt, geben Sie im Attribut href an.
-            Der Text zwischen den Tags ist der Linktext. Er sollte nach Möglichkeit angeben, wohin die Benutzer
-            gelangen, wenn sie drauf klicken.
-            <h3>Absolute URLs</h3>
-            URL steht für Uniform Resource Locator. Jede Webseite verfügt über ihren eigenen URL. Dabei handelt es sich
-            um die Webadresse, die Sie im Browser eingeben, wenn Sie diese Seite
-            besuchen möchten. Ein absoluter URL beginnt mit dem Domänennamen der Webseite. Darauf kann der Pfad zu
-            einer einzelnen Seite folgen. Ist keine Seite angegeben,
-            wird die Startseite der Webseite angezeigt.
-            <h3>Relative URLs</h3>
-            Für Links zu anderen Seiten derselben Webseite können Sie relative URLs verwenden. Das ist eine Art
-            Kurzversion eines
-            absoluten URLs, da der Domänenname nicht angegeben werden muss.
-            Relative URLs sind hilfreich, wenn Sie eine Webseite auf Ihrem Computer erstellen, da Sie dadurch Links
-            zwischen den Seiten aufbauen können, ohne
-            einen Domänennamen einzurichten oder für das Hosting zu sorgen.
-            Bei Links zu Seiten auf Ihrer eigenen Webseite müssen Sie den Domänennamen nicht angeben, sondern können
-            relative URLs verwenden. Dabei handelt es sich
-            um eine kürzere Möglichkeit, um dem Browser mitzuteilen, wo sich eine Seite relativ zur aktuellen Seite
-            befindet.
-            Da Sie den Domänennamen nicht in jedem Link wiederholen müssen, lassen sich diese Verknüpfungen auch
-            einfach schreiben.
-            Befinden sich alle Dateien Ihrer Webseite in einem einzigen Ordner, geben Sie einfach den Dateinamen der
-            Seite an.
-            Ist die Webseite dagegen in mehrere Ordner unterteilt, müssen Sie dem Browser mitteilen, wie er von der
-            aktuellen Seite zu derjenigen gelangt, die verlinkt ist.
-            <h2>Verzeichnisstruktur</h2>
-            Bei grösseren Websites ist es sinnvoll, den Code zu gliedern, indem Sie die Seiten jeweils in Ordner für
-            die Abschnitte stellen, zu denen sie gehören. Die Ordner
-            von Websites werden auch als Verzeichnisse bezeichnet.
-            <h3>Struktur</h3>
-            Der Ordner der obersten Ebene ist der sogenannte Wurzelordner. Der Wurzelordner enthält alle anderen
-            Dateien und Ordner der Webseite.
-            <h3>Beziehungen</h3>
-            Die Beziehungen zwischen den Dateien und Ordnern einer Webseite werden mit Begriffen bezeichnet, die aus
-            Familienstammbäumen bekannt sind
-            <h3>Startseiten</h3>
-            Die Hauptstartseite einer in HTML geschriebenen Webseite heisst "index.html".
-            Wenn kein Dateiname angegeben ist, geben Webserver gewöhnlich die Datei "index.html" zurück.
-            <br />
-            Jede Seite und jedes Bild einer Webseite hat einen URL. Er besteht aus dem Domänennamen, gefolgt von dem
-            Pfad zu der Webseite.
-            URLs verwenden Sie, wenn Sie Links zu anderen Webseiten erstellen oder wenn Sie Bilder auf Ihrer eigenen
-            Webseite einfügen.
-            <h3>E-Mail-Links</h3>
-            <h3>mailto:</h3>
-            Um einen Link zu erstellen, der das E-Mail-Programm des Benutzers startet und eine neue Nachricht mit einer
-            bestimmten Adresse versieht, verwenden Sie ebenfalls das Element "a",
-            geben im Attribut "href" als Wert jedoch "mailto:" gefolgt von der gewünschten E-Mail-Adresse ein. <br />
-            Das sieht dann so aus: <br />"a href="mailto:manuel@example.ch">E-Mail an Manuel(Schlusstag)
-            <h3>Links in einem neuen Fenster öffnen mit "target</h3>
-            Wenn der Link die Zielseite in einem neuen Fenster öffnen soll, können Sie im öffnenden a-Tag das Attribut
-            "target" verwenden. Als Wert verwenden Sie "_blank".
-            Links werden hauptsächlich dann in einem neuen Fenster geöffnet, wenn sie zu einer anderen Webseite führen.
-            Der Autor der Webseite hofft in einem solchen Fall,
-            dass seine Besucher zu dem Fenster mit seiner eigenen Webseite zurückkehren, nachdem Sie sich den Inhalt
-            der anderen angesehen haben.
-            Im Allgemeinen sollten Sie darauf verzichten, Links in neuen Fenstern zu öffnen. Wenn Sie es aber tun,
-            sollten Sie die Benutzer darüber informieren, bevor sie auf den Link klicken.
-            <h2>Bilder</h2>
-            Wenn Sie eine Webseite neu erstellen, ist es bewährte Praxis, einen für alle verwendeten Bilder anzulegen.
-            <h3>Bilder hinzufügen</h3>
-            <h4>img</h4>
-            Um Bilder zu einer Seite hinzuzufügen verwenden Sie das Element "img". Dies ist ein leeres Element. Die
-            folgenden beiden Attribute müssen enthalten sein:
-            <h4>src</h4>
-            Dieses Attribut sagt dem Browser, wo die Bilddatei zu finden ist. Der Wert ist gewöhnlich ein relativer
-            URL, der auf ein Bild auf Ihrer eigenen Webseite zeigt.
-            <h4>alt</h4>
-            Dieses Attribut bietet eine Beschreibung des Bildes in Textform für den Fall, dass das Bild nicht zu sehen
-            sein sollte.
-            <h4>title</h4>
-            Sie können im Element "img" auch das Attribut "title" verwenden, zm zusätzliche Informationen über das Bild
-            anzugeben. Die meisten Browser zeigen den Inhalt dieses Attributs in einem kleinen
-            Informationsfeld an, wenn der Besucher mit dem Mauszeiger über das Bild fährt.
-            <h3>Höhe und Breite von Bildern</h3>
-            Häufig werden in img-Elementen noch zwei weitere Attribute verwendet, die die Grösse angeben:
-            <h4>height</h4>
-            Gibt die Höhe des Bildes in Pixeln an. Kann aber auch ein em-Wert sein oder %.
-            <h4>width</h4>
-            Gibt die Breite des Bildes an.
-            <br />
-            Es dauert meistens länger, die Bilder zu laden, als den HTML-Code, der den Rest der Seite ausmacht. Daher
-            ist es sinnvoll, die Bildgrösse anzugeben, sodass der Browser den Rest der Seite schon einmal darstellen
-            und dabei ausreichend Platz für das Bild lassen kann, das noch geladen wird.
-            Die Grösse von Bildern wird immer häufiger mit CSS angegeben.
-            <h3>Bildformate</h3>
-            <h4>JPEG</h4>
-            Wenn ein Bild viele verschiedene Farben enthält, sollten Sie das Format JPEG verwenden. Fotos mit
-            Schneelandschaften oder bewölktem Himmel wirken zwar so, als enthielten sie grosse Flächen aus derselben,
-            Farbe
-            aber in Wirklichkeit besteht das Bild aus vielen verschiedenen Farben mit feinen unterschiedlichen
-            Nuancen.
-            <h4>GIF/PNG</h4>
-            Verwenden Sie die Formate GIF oder PNG für Bilder mit wenigen Farben oder grossen einfarbigen Flächen.
-            Wenn ein Bildbereich durchgängig mit genau derselben Farbe ausgefüllt ist, spricht man von flachen Farben.
-            Das ist häufig in Logos, Zeichnungen und Diagrammen der Fall.
-            Fotos von Schnee, von Gras oder vom Himmel weisen jedoch keine flachen Farben auf, sondern viele
-            verschiedene Nuancen einer Farbe, weshalb die Formate GIF und PNG dafür nicht so gut geeignet sind.
-            <h3>Bildunterschriften</h3>
-            <h4>figure</h4>
-            Bilder weisen oft eine Unterschrift auf. In HTML5 gibt es das neue Element "figure", das ein Bild und seine
-            Unterschrift einschliesst, sodass sie zusammenhängen.
-            Wenn sich mehrere Bilder dieselbe Unterschrift teilen, können in einem figure-Element auch mehrere Bilder
-            stehen.
-            <h4>figcaption</h4>
-            Das Element "figcaption" wurde in HTML5 hinzugefügt, um Bilder mit Unterschriften zu versehen.
-            Bevor diese Elemente zur Verfügung gestellt wurden, gab es keine Möglichkeit, um ein img-Element mit seiner
-            Bildunterschrift zu verknüpfen.
-            <h2>Tabellen</h2>
-            Es gibt verschiedene Arten von Informationen, die in einem Raster oder einer Tabelle dargestellt werden
-            müssen.
-            Dafür hat HTML auch einige Funktionen.
-            <h3>Grundlegende Tabellenstruktur</h3>
-            <h4>table</h4>
-            Tabellen werden mit dem Element "table" erstellt. Die Inhalte der Tabelle werden Zeile für Zeile
-            geschrieben.
-            <h4>tr</h4>
-            Den Beginn einer Zeile markieren Sie jeweils mit dem öffnenden tr-Tag (tr=table row). Darauf folgt jeweils
-            ein td-Element für jede Zelle in der Zeile.
-            Am Ende der Zeile geben Sie das schliessende tr-Tag an.
-            <h4>td</h4>
-            Die einzelnen Zellen einer Tabelle werden durch td-Elemente (td=Tabellendaten) dargestellt. Am Ende jeder
-            Zelle steht jeweils ein schliessendes td-Tag.
-            <h3>Tabellenüberschriften</h3>
-            Das Element "th" (table heading) wird ebenso verwendet wie "td", steht aber für die Überschrift einer
-            Spalte oder Zeile.
-            Hat eine Zelle keinen Inhalt, müssen Sie trotzdem das Element "td" oder "th" verwenden, um das
-            Vorhandensein der leeren Zelle zu kennzeichnen, da die Tabelle ansonsten
-            falsch dargestellt wird.
-            <br />
-            Überschriften, die Sie mit "th" hinzufügen, sind hilfreich für Personen, die Screenreader einsetzen.
-            Ausserdem können Suchmaschinen Ihre Seiten dann besser indizieren, und Sie können das Erscheinungsbild der
-            Tabellen
-            dann besser beeinflussen, wenn Sie anfangen mit CSS zu arbeiten.
-            Mit dem Attribut "scope" von "th" geben Sie an, ob die Überschrift für eine Spalte oder für eine Zeile
-            gilt. Möglich sind die Werte "row" für Zeilen- und "col" für Spaltenüberschriften.
-            Browser zeigen den Inhalt von th-Elementen gewöhnlich fett und in der Zelle zentriert an.
-            <h3>Spalten zusammenfassen</h3>
-            Mit dem "colspan" für die Elemente "th" und "td" können Sie angeben, über wie viele Spalten sich eine Zelle
-            erstecken soll. Umgekehrt geht dies auch mit Zeilen. Dafür ist es das Attribut "rowspan".
-            <h2>Formulare</h2>
+            Am häufigsten wird "span" benutzt, um das Erscheinungsbild des darin eingeschlossenen Inhalts mit CSS zu beeinflussen.
+        <br>
+            Gewöhnlich weist ein span-Element aus folgenden Gründen ein id- oder class-Attribut auf:
+            <ol class="ul">
+                <li class="ulli">Um den Zweck des span-Elements zu erklären.</li>
+                <li class="ulli">Um CSS-Stile auf Elemente anzuwenden, deren Attribut einen bestimmten Wert aufweist.</li>
+            </ol>
+            <h3>iFrames</h3>
+            Das Element "iFrame" wird benutzt um andere Seiten in Ihrer Seite zu laden. Es ist ein Feld in der Seite, das eine andere Seite anzeigt.
+            iFrame ist eine Abkürzung für "Inline-Frame". Es wird meistens verwendet um Google-Maps auf eine Seite zu laden. Man kann aber jede beliebige Webseite benutzen.
+        <br><br>
+            Folgend sind die wichtigsten Attribute für iFrame aufgelistet.
+            <ol class="ul">
+                <li class="ulli"><b>src:</b><br> gibt den URL der Seite an, die in dem Frame angezeigt werden soll.</li>
+                <li class="ulli"><b>height:</b><br> Gibt die Höhe an.</li>
+                <li class="ulli"><b>width:</b><br> Gibt die Breite des iFrames in Pixeln an.</li>
+                <li class="ulli"><b>seamless:</b><br> Das neue Attribut löscht Rollbalken aus. Braucht keine Wert, enthält aber häufig den Wert "seamless". Für ältere Browser untauglich.</li>
+            </ol>
+            <h3>Informationen über Ihre Seite</h3>
+            <h4>meta</h4>
+            Das Element "meta" befindet sich innerhalb des Elements "head" und enthält Informationen über die Webseite.
+            Es ist für die Benutzer nicht sichtbar. So teilt es Suchmaschinen etwas über die Seite und deren Autor mit und gibt an, ob die Seite zeitkritisch ist.
+            "meta" ist ein leeres Element ohne schliessendes Tag. Die enthaltenen Informationen stehen in Attributen.
+            Die gebräuchlichsten Attribute sind "name" und "content", die als Paar eingesetzt werden. Darin werden Eigenschaften der gesamten Seite angegeben.
+            Der Wert von "name" ist dabei jeweils die Eigenschaft, die Sie festlegen, und der Wert von content der Wert, den diese Eigenschaft aufweisen soll.
+            "name" kann jeden beliebigen Wert annehmen. Einige häufig verwendete vordefinierte Werte für dieses Attribut sind:
+            <ol class="ul">
+            <li class="ulli"><b>description:</b><br/> Bezeichnet eine Beschribung der Seite, die maximal 155 Zeichen lang sein darf. Suchmaschinen ziehen diese Beschreibung dazu heran, um zu erkennen, worum es auf der Seite geht, und zeigen sie nachmal
+            auch in den Suchergebnissen an.</li>
+                <li class="ulli"><b>keywords:</b><br/> Bezeichnet eine Liste durch Kommata getrennter Wörter, nach denen Benutzer suchen können, um zu Ihrer Seite zu gelangen. In der Praxis haben diese Schlüsselwörter
+                keine erkennbare Auswirkung mehr darauf, wie Suchmaschinen Ihre Website indizieren.</li>
+                <li class="ulli"><b>robots:</b><br/> Gibt an, ob Suchmaschinen diese Seite zu ihren Suchergebnissen hinzufügen sollen oder nicht. Bei dem Wert "noindex" soll die Seite nicht in die Ergebnisse aufgenommen werden.
+                Mit dem Wert "nofollow" sorgen Sie dafür, dass die betreffende Seite in die Suchergebnisse einbezogen werden kann, aber nicht die Seiten, auf die sie verlinkt sind.</li>
+            </ol>
+            Im Element "meta" wird auch das Attributpaar aus "http-equiv" und "content" verwendet.
+            <h3>Maskierungszeichen</h3>
+            Einige Sonderzeichen werden im HTML-Code verwendet und sind daher reserviert.
+            Wenn Sie solche Zeichen auf Ihrer Webseite anzeigen lassen möchten, müssen Sie sie "maskieren". Um Beispielsweise eine öffnende spitze Klammer darzustellen, schreiben Sie 
+            entweder &amp;lt; oder &amp;#60;.
+        <br/>
+        Bei der Verwendung von Maskierungszeichen müssen Sie die Seite unbedingt im Browser überprüfen, um sicherzustellen, dass das richtige Symbol angezeigt wird. Manche Schriftarten enthalten
+        nämlich nicht alle Zeichen. In diesem Fall müssen Sie im CSS-Code eine andere Schriftart für das Sonderzeichen festlegen.
+        Für die "Übersetzung" beim Maskieren werden Online-Tools angeboten, die kostenlos zur Verfügung stehen.
+    <br/>
+        Beispielhafte Tools: 
+    <br/>
+        https://www.amazingweb.de/escape.php  und HTML Entities Encoder/Decoder von web2generator.
+</div>
+<div class="html">
+        <h2>Formulare</h2>
             Mit HTML-Formularen steht Ihnen eine Reihe von Elementen zur Verfügung, um Daten von den Benutzern
             abzufragen.
             <h3>Funktionsweise Formulare</h3>
@@ -566,66 +479,257 @@
             Die meisten Browser zeigen um den Rand eines fieldset-Bereichs eine Linie an, um den Zusammenhang zwischen den darin enthaltenen Elementen deutlich zu machen. Das Aussehen dieser Linien können Sie mit CSS anpassen.
             <h4>legend</h4>
             Direkt hinter dem öffnenden fieldset-Tag kann das Element "legend" stehen. Es enthält eine Beschriftung, die den Zweck dieser Gruppe von Formularsteuerelementen angibt.
-            <h2>Besonderes Markup</h2>
-            <h3>Die Entwicklung von HTML</h3>
-            Es gab schon einige Vorgängerversionen von HTML. Bei jeder neuen Version wurden neue Elemente und Attribute hinzugefügt und ältere entfernt. Aber durch die neuen Version mussten auch die Browser aktualisiert werden.
-            Einige Leute haben nicht die aktuellste Version ihres Browsers und diese können dann nicht die neueste Version von HTML korrekt verarbeiten. Dies kann zu Fehlanzeigen einer Webseite führen.
-            <h4>Doctype</h4>
-            Da es verschiedene Versionen von HTML gibt, sollte eine Webseite mit einer Dokumenttypdeklaration (DOCTYPE) beginnen, die dem Browser mitteilt, welche dieser Versionen verwendet wird.
-            Für HTML5 gilt als Deklaration: !doctype html in Klammern. 
-            Die Deklaration steht immer ganz am Anfang eines HTML-Dokuments.
-            <h3>Das Attribut ID</h3>
-            Jedes HTML-Element kann das Attribut "id" aufweisen, mit dem das Element von allen anderen Elementen auf der Seite unterschieden wird. Der Wert dieses Attributs muss mit einem
-            Buchstaben oder Unterstrich beginnen, also keine Zahl oder anderen Zeichen.
+</div>
+<div class="html">
+            <h2>Listen</h2>
+            In HTML stehen drei verschiedene Arten von Listen zur Verfügung.
+            <dl>
+                <dt>Geordnete Listen (ol)</dt>
+                <dd>In geordneten Listen sind die Einträge durchnummeriert.</dd>
+                
+                <dt>Ungeordnete Listen (ul)</dt>
+                <dd>Die Einträge von ungeordneten Listen beginnen mit einem Aufzählungssymbol.</dd>
+                
+                <dt>Definitionslisten (dl)</dt>
+                <dd>Definitionslisten bestehen aus Begriffen und ihren Definitionen.
+                    Für die oberen Beiden Listen werden li-Elemente benutzt. Für "dl" wird "dt" und "dd" verwendet.
+                    "dt" gibt den zu definierenden Term an und in "dd" ist die Definition.
+                </dd>
+            </dl>
+            <p>Es gibt auch noch die Möglichkeit in einer Liste eine Liste zu erstellen. Dies nennt man dann
+                verschachtelte
+                Liste. Browser zeigen verschachtelte Listen weiter eingerückt an als die übergeordnete Liste. Bei
+                verschachtelten ungeordneten Listen
+                ändert der Browser gewöhnlich auch das Aufzählungssymbol.
+            </p>
+</div>
+<div class="html">
+            <h2>Flash, Video & Audio</h2>
+            Flash ist eine weit verbreitete Technologie, um Animationen, Video- und Audioinhalte zu Websites hinzuzufügen. 
+            <h3>Flash-Filme zu einer Webseite hinzufügen</h3>
+            <p>
+                Am häufigsten wird Flash mit JavaScript in Webseiten aufgenommen. Es gibt verschiedene Skripts, mit denen Sie dies tun können, ohne viel von JavaScript verstehen zu müssen.
+                Ein Skript für SWF-Dateien, das gerne benutzt wird heisst SWFObject. Dies kann man kostenlos von Google beziehen.
+                Ein Vorteil dieser Technik ist, dass bei Browsern, die kein Flash anzeigen können, ein Alternativtext ausgegeben werden kann. 
+                Bei dieser Technik wird mit einem div-Element Platz für den Flash-Film vorgehalten. Der Wert für das id-Attribut dieses div-Elements wird vom Skript SWFObject verwendet.
+                Innerhalb des div-Elements können Sie alternativen Inhalt für Benutzer unterbringen, die Flash nicht abspielen können.
+                </p>
             <br/>
-            Zwei Elemente auf dergleichen Seite dürfen nicht denselben Wert für "id" aufweisen.
-            <br/><br/>
-            "id" ist ein globales Attribut, da es für alle Elemente verwendet werden kann. 
-            <h3>Das Attribut Class</h3>
-            Alle HTML-Elemente können auch das Attribut "class" aufweisen. Anstatt ein einzelnes element in einem Dokument eindeutig zu bezeichnen, ist es manchmal notwendig, mehrere Elemente zu markieren,
-            die sich auf die gleiche Weise von den anderen Elementen auf der Seite abheben sollen.
+                <img id="flash" src="img/flash.PNG" alt="flash-hinzufügen"/>
+            <h3>Videoformate & Player</h3>
+            <p>
+                 Es gibt verschiedene Videoformate wie AVI, Flash Video, H264, MPEG, Ogg Theora, QuickTime, WebM und Windows Media. 
+                 Verschiedene Browser können nicht alle Videoformate wiedergeben. Damit Ihre Besucher Ihre Videos onlineschauen können, müssen die Filme unter Umständen in ein anderes Format konvertiert werden.
+                 Diese Umwandlung von einem Videoformat in ein anderes wird auch "Codierung" genannt.
+            </p>
+            <p>
+                Ein beispielhaftes Tool für die Konvertierung von Videos ist z.B. Miro <a href="http://www.mirovideoconverter.com" target="_blank">Video Converter</a>
+            </p>
+            <p>Um ein Film zu einer Webseite hinzuzufügen kann auch ein externer Dienst wie YouTube oder Vimeo verwendet werden.
+                Dies hat mehrere Vorteile:
+                <ol class="ul">
+                    <li class="ulli">Player wird von den meisten Webbrowsern unterstützt.</li>
+                    <li class="ulli">Automatische Konvertierung des Videos für die verschiedenen Browser.</li>
+                    <li class="ulli">Keine Zusatzkosten für die Unterbringung auf YouTube.</li>
+                </ol>
+            </p>
+            <ol class="ul">
+                <li class="ulli"></li>
+            </ol>
+</div>
+<div class="html">
+            <h2>Links</h2>
+            Links sind das Schlüsselmerkmal des Webs, denn damit ist es möglich, sich von einer Webseite zur anderen zu
+            bewegen.
+            Standardmässig werden Ihnen folgende Arten von Links begegnen:
             <br/>
-            Es ist auch möglich, dass Sie zwischen Links zu anderen Seiten Ihrer Webseite und Links zu externen Webseiten unterscheiden wollen.
-            Dazu können Sie das Attribut "class" verwenden, dessen Wert die Klasse angibt, zu der das Element gehören soll. <br/>
-            Die class-Attribute unterschiedlicher Elemente können den gleichen Wert aufweisen.
-            <h3>Blockelemente</h3>
-            Einige Elemente beginnen bei der Anzeige im Browserfenster immer in einer neuen Zeile. Dies sind die sogenannten Blockelemente. Beispiele für Blockelemente sind h1, p, ul und li.
-            Das folgende Bild veranschaulicht das Verhalten von Inline- und Blockelementen.
-            <img class="block" src="img/block-inline.jpeg" alt="block und inline"/>
-            Andere Elemente stehen in derselben Zeile wie ihre Nachbarelemente. Dies sind Inline-Elemente.
-        </p>
-    </div>
+            <br/>
+            <ol class="ul">
+                <li class="ulli">Link von einer Webseite zu einer anderen</li>
+                <li class="ulli">Links von einer Seite zu einer anderen auf derselben Webseite</li>
+                <li class="ulli">Links von einem Teil einer Webseite zu einem anderen Teil derselben Seite</li>
+                <li class="ulli">Links, die in einem neuen Browserfenster geöffnet werden</li>
+                <li class="ulli">Links, die Ihr E-Mail-Programm starten und eine neue E-Mail-Nachricht mit einer
+                    Adresse versehen</li>
+            </ol>
+            <br/>
+            Links werden mit dem Element "a" erstellt. Die Benutzer können auf alles klicken, was sich zwischen dem
+            öffnenden Tag und dem schliessenden Tag befindet.
+            Zu welcher Seite der Link führt, geben Sie im Attribut href an.
+            Der Text zwischen den Tags ist der Linktext. Er sollte nach Möglichkeit angeben, wohin die Benutzer
+            gelangen, wenn sie drauf klicken.
+            <h3>Absolute URLs</h3>
+            URL steht für Uniform Resource Locator. Jede Webseite verfügt über ihren eigenen URL. Dabei handelt es sich
+            um die Webadresse, die Sie im Browser eingeben, wenn Sie diese Seite
+            besuchen möchten. Ein absoluter URL beginnt mit dem Domänennamen der Webseite. Darauf kann der Pfad zu
+            einer einzelnen Seite folgen. Ist keine Seite angegeben,
+            wird die Startseite der Webseite angezeigt.
+            <h3>Relative URLs</h3>
+            Für Links zu anderen Seiten derselben Webseite können Sie relative URLs verwenden. Das ist eine Art
+            Kurzversion eines
+            absoluten URLs, da der Domänenname nicht angegeben werden muss.
+            Relative URLs sind hilfreich, wenn Sie eine Webseite auf Ihrem Computer erstellen, da Sie dadurch Links
+            zwischen den Seiten aufbauen können, ohne
+            einen Domänennamen einzurichten oder für das Hosting zu sorgen.
+            Bei Links zu Seiten auf Ihrer eigenen Webseite müssen Sie den Domänennamen nicht angeben, sondern können
+            relative URLs verwenden. Dabei handelt es sich
+            um eine kürzere Möglichkeit, um dem Browser mitzuteilen, wo sich eine Seite relativ zur aktuellen Seite
+            befindet.
+            Da Sie den Domänennamen nicht in jedem Link wiederholen müssen, lassen sich diese Verknüpfungen auch
+            einfach schreiben.
+            Befinden sich alle Dateien Ihrer Webseite in einem einzigen Ordner, geben Sie einfach den Dateinamen der
+            Seite an.
+            Ist die Webseite dagegen in mehrere Ordner unterteilt, müssen Sie dem Browser mitteilen, wie er von der
+            aktuellen Seite zu derjenigen gelangt, die verlinkt ist.
+            <h2>Verzeichnisstruktur</h2>
+            Bei grösseren Websites ist es sinnvoll, den Code zu gliedern, indem Sie die Seiten jeweils in Ordner für
+            die Abschnitte stellen, zu denen sie gehören. Die Ordner
+            von Websites werden auch als Verzeichnisse bezeichnet.
+            <h3>Struktur</h3>
+            Der Ordner der obersten Ebene ist der sogenannte Wurzelordner. Der Wurzelordner enthält alle anderen
+            Dateien und Ordner der Webseite.
+            <h3>Beziehungen</h3>
+            Die Beziehungen zwischen den Dateien und Ordnern einer Webseite werden mit Begriffen bezeichnet, die aus
+            Familienstammbäumen bekannt sind.
+            <h3>Startseiten</h3>
+            Die Hauptstartseite, einer in HTML geschriebenen Webseite, heisst "index.html".
+            Wenn kein Dateiname angegeben ist, geben Webserver gewöhnlich die Datei "index.html" zurück.
+            <br/>
+            Jede Seite und jedes Bild einer Webseite hat einen URL. Er besteht aus dem Domänennamen, gefolgt von dem
+            Pfad zu der Webseite.
+            URLs verwenden Sie, wenn Sie Links zu anderen Webseiten erstellen oder wenn Sie Bilder auf Ihrer eigenen
+            Webseite einfügen.
+            <h3>E-Mail-Links</h3>
+            <h3>mailto:</h3>
+            Um einen Link zu erstellen, der das E-Mail-Programm des Benutzers startet und eine neue Nachricht mit einer
+            bestimmten Adresse versieht, verwenden Sie ebenfalls das Element "a",
+            geben im Attribut "href" als Wert jedoch "mailto:" gefolgt von der gewünschten E-Mail-Adresse ein. <br />
+            Das sieht dann so aus: <br />"a href="mailto:manuel@example.ch">E-Mail an Manuel(Schlusstag)
+            <h3>Links in einem neuen Fenster öffnen mit "target</h3>
+            Wenn der Link die Zielseite in einem neuen Fenster öffnen soll, können Sie im öffnenden a-Tag das Attribut
+            "target" verwenden. Als Wert verwenden Sie "_blank".
+            Links werden hauptsächlich dann in einem neuen Fenster geöffnet, wenn sie zu einer anderen Webseite führen.
+            Der Autor der Webseite hofft in einem solchen Fall,
+            dass seine Besucher zu dem Fenster mit seiner eigenen Webseite zurückkehren, nachdem Sie sich den Inhalt
+            der anderen angesehen haben.
+            Im Allgemeinen sollten Sie darauf verzichten, Links in neuen Fenstern zu öffnen. Wenn Sie es aber tun,
+            sollten Sie die Benutzer darüber informieren, bevor sie auf den Link klicken.
+</div>
+<div class="html">
+            <h2>Bilder</h2>
+            Wenn Sie eine Webseite neu erstellen, ist es bewährte Praxis, einen Ordner für alle verwendeten Bilder anzulegen.
+            <h3>Bilder hinzufügen</h3>
+            <h4>img</h4>
+            Um Bilder zu einer Seite hinzuzufügen verwenden Sie das Element "img". Dies ist ein leeres Element. Die
+            folgenden beiden Attribute müssen enthalten sein:
+            <h4>src</h4>
+            Dieses Attribut sagt dem Browser, wo die Bilddatei zu finden ist. Der Wert ist gewöhnlich ein relativer
+            URL, der auf ein Bild auf Ihrer eigenen Webseite zeigt.
+            <h4>alt</h4>
+            Dieses Attribut bietet eine Beschreibung des Bildes in Textform für den Fall, dass das Bild nicht zu sehen
+            sein sollte.
+            <h4>title</h4>
+            Sie können im Element "img" auch das Attribut "title" verwenden, um zusätzliche Informationen über das Bild
+            anzugeben. Die meisten Browser zeigen den Inhalt dieses Attributs in einem kleinen
+            Informationsfeld an, wenn der Besucher mit dem Mauszeiger über das Bild fährt.
+            <h3>Höhe und Breite von Bildern</h3>
+            Häufig werden in img-Elementen noch zwei weitere Attribute verwendet, die die Grösse angeben:
+            <h4>height</h4>
+            Gibt die Höhe des Bildes in Pixeln an. Kann aber auch ein em-Wert sein oder %.
+            <h4>width</h4>
+            Gibt die Breite des Bildes an.
+            <br/>
+            Es dauert meistens länger, die Bilder zu laden, als den HTML-Code, der den Rest der Seite ausmacht. Daher
+            ist es sinnvoll, die Bildgrösse anzugeben, sodass der Browser den Rest der Seite schon einmal darstellen
+            und dabei ausreichend Platz für das Bild lassen kann, das noch geladen wird.
+            Die Grösse von Bildern wird immer häufiger mit CSS angegeben.
+            <h3>Bildformate</h3>
+            <h4>JPEG</h4>
+            Wenn ein Bild viele verschiedene Farben enthält, sollten Sie das Format JPEG verwenden. Fotos mit
+            Schneelandschaften oder bewölktem Himmel wirken zwar so, als enthielten sie grosse Flächen aus derselben,
+            Farbe
+            aber in Wirklichkeit besteht das Bild aus vielen verschiedenen Farben mit feinen unterschiedlichen
+            Nuancen.
+            <h4>GIF/PNG</h4>
+            Verwenden Sie die Formate GIF oder PNG für Bilder mit wenigen Farben oder grossen einfarbigen Flächen.
+            Wenn ein Bildbereich durchgängig mit genau derselben Farbe ausgefüllt ist, spricht man von flachen Farben.
+            Das ist häufig in Logos, Zeichnungen und Diagrammen der Fall.
+            Fotos von Schnee, von Gras oder vom Himmel weisen jedoch keine flachen Farben auf, sondern viele
+            verschiedene Nuancen einer Farbe, weshalb die Formate GIF und PNG dafür nicht so gut geeignet sind.
+            <h3>Bildunterschriften</h3>
+            <h4>figure</h4>
+            Bilder weisen oft eine Unterschrift auf. In HTML5 gibt es das neue Element "figure", das ein Bild und seine
+            Unterschrift einschliesst, sodass sie zusammenhängen.
+            Wenn sich mehrere Bilder dieselbe Unterschrift teilen, können in einem figure-Element auch mehrere Bilder
+            stehen.
+            <h4>figcaption</h4>
+            Das Element "figcaption" wurde in HTML5 hinzugefügt, um Bilder mit Unterschriften zu versehen.
+            Bevor diese Elemente zur Verfügung gestellt wurden, gab es keine Möglichkeit, um ein img-Element mit seiner
+            Bildunterschrift zu verknüpfen.
+</div>
+<div class="html">
+            <h2>Tabellen</h2>
+            <p>Es gibt verschiedene Arten von Informationen, die in einem Raster oder einer Tabelle dargestellt werden
+            müssen.
+            Dafür hat HTML auch einige Funktionen.</p>
+            <h3>Grundlegende Tabellenstruktur</h3>
+            <h4>table</h4>
+            <p>Tabellen werden mit dem Element "table" erstellt. Die Inhalte der Tabelle werden Zeile für Zeile
+            geschrieben.</p>
+            <h4>tr</h4>
+            <p>Den Beginn einer Zeile markieren Sie jeweils mit dem öffnenden tr-Tag (tr=table row). Darauf folgt jeweils
+            ein td-Element für jede Zelle in der Zeile.
+            Am Ende der Zeile geben Sie das schliessende tr-Tag an.</p>
+            <h4>td</h4>
+            <p>Die einzelnen Zellen einer Tabelle werden durch td-Elemente (td=Tabellendaten) dargestellt. Am Ende jeder
+            Zelle steht jeweils ein schliessendes td-Tag.</p>
+            <h3>Tabellenüberschriften</h3>
+            <p>Das Element "th" (table heading) wird ebenso verwendet wie "td", steht aber für die Überschrift einer
+            Spalte oder Zeile.
+            Hat eine Zelle keinen Inhalt, müssen Sie trotzdem das Element "td" oder "th" verwenden, um das
+            Vorhandensein der leeren Zelle zu kennzeichnen, da die Tabelle ansonsten
+            falsch dargestellt wird.</p>
+            <br/>
+            <p>Überschriften, die Sie mit "th" hinzufügen, sind hilfreich für Personen, die Screenreader einsetzen.
+            Ausserdem können Suchmaschinen Ihre Seiten dann besser indizieren, und Sie können das Erscheinungsbild der
+            Tabellen
+            dann besser beeinflussen, wenn Sie anfangen mit CSS zu arbeiten.
+            Mit dem Attribut "scope" von "th" geben Sie an, ob die Überschrift für eine Spalte oder für eine Zeile
+            gilt. Möglich sind die Werte "row" für Zeilen- und "col" für Spaltenüberschriften.
+            Browser zeigen den Inhalt von th-Elementen gewöhnlich fett und in der Zelle zentriert an.</p>
+            <h3>Spalten zusammenfassen</h3>
+            <p>Mit dem "colspan" für die Elemente "th" und "td" können Sie angeben, über wie viele Spalten sich eine Zelle
+            erstecken soll. Umgekehrt geht dies auch mit Zeilen. Dafür ist es das Attribut "rowspan".</p>
+</div>
     <div class="css" id="css">
         <h1>CSS</h1>
         <p class="text">
             CSS (Cascading Style Sheets) beschreibt wie HTML-Elemente auf Bildschirmen, Papier
             oder anderen Mediengeräten angezeigt werden sollen. Es sichert eine Menge Arbeit, da ein CSS-File auf
             mehrere HTML-Seiten
-            gleichzeitig wirken kann. <br />
-            CSS kann auf drei Arten angewendet werden:
-            <ul class="ul">
+            gleichzeitig wirken kann.</P>
+            <p>CSS kann auf drei Arten angewendet werden:</p>
+            <ol class="ul">
                 <li class="ulli">Inline</li>
                 <li class="ulli">Internal</li>
                 <li class="ulli">External</li>
-            </ul>
-            <br />
-            Inline bedeutet, dass man das Attribut "style" in HTML selbst benutzt um CSS-Regeln zu schreiben.
-            <br />
-            Internal ist die Benutzung des "style" Attribut in der Sektion "head".
-            <br />
-            Bei External, also externer Art sind die CSS-Regeln nicht im HTML-File, sondern sie sind in einem
+            </ol>
+            <p>Inline bedeutet, dass man das Attribut "style" in HTML selbst benutzt um CSS-Regeln zu schreiben.</p>
+            
+            <p> Internal ist die Benutzung des "style" Attribut in der Sektion "head".</p>
+            
+            <p>Bei External, also externer Art sind die CSS-Regeln nicht im HTML-File, sondern sie sind in einem
             separaten CSS-File beschrieben. Dieses File wird dann ganz einfach mit dem HTML-Dokument verlinkt.
             Der Schlüssel für das Verständnis von CSS liegt darin, sich einen unsichtbaren Kasten rund um jedes
-            HTML-Element vorzustellen.
-            <br />
-            Block-Elemente werden so angezeigt, als ob sie auf einer neuen Zeile beginnen.
-            Inline-Elemente fliessen mit dem Text und fangen nicht in einer neuen Zeile an.
-            <br />
-            <br />
-            CSS-Regeln werden auf HTML-Elemente angewendet und legen fest, wie der Inhalt dieser Elemente angezeigt
+            HTML-Element vorzustellen.</p>
+            
+            <p>Block-Elemente werden so angezeigt, als ob sie auf einer neuen Zeile beginnen.
+            Inline-Elemente fliessen mit dem Text und fangen nicht in einer neuen Zeile an.</p>
+            
+            <p>CSS-Regeln werden auf HTML-Elemente angewendet und legen fest, wie der Inhalt dieser Elemente angezeigt
             werden soll.
-            Eine CSS-Regel besteht aus zwei Teilen: einem Selektor und einer Deklaration.
-        </p>
+            Eine CSS-Regel besteht aus zwei Teilen: einem Selektor und einer Deklaration.</p>
+        
     </div>
     <div class="praxis" id="praxis">
         <h1>Praxis</h1>
