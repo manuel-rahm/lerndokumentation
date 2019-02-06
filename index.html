@@ -764,7 +764,7 @@
             </ol>
             <p>Inline bedeutet, dass man das Attribut "style" in HTML selbst benutzt um CSS-Regeln zu schreiben.</p>
             
-            <p> Internal ist die Benutzung des "style" Attribut in der Sektion "head".</p>
+            <p>Internal ist die Benutzung des "style" Attribut in der Sektion "head".</p>
             
             <p>Bei External, also externer Art sind die CSS-Regeln nicht im HTML-File, sondern sie sind in einem
             separaten CSS-File beschrieben. Dieses File wird dann ganz einfach mit dem HTML-Dokument verlinkt.
@@ -788,6 +788,278 @@
                 <p>Innerhalb der geschweiften Klammern stehen die CSS-Deklarationen, die aus je zwei Teilen bestehen: Einer <b>Eigenschaft</b> und einem <b>Wert</b>,
                 getrennt durch einen Doppelpunkt. In einer Deklaration können auch mehrere Eigenschaften angegeben werden, die Sie jeweils durch ein Semikolon trennen müssen.
                 </p>
+                </div>
+                <div class="css">
+                <h2>Externe Einbindung von CSS</h2>
+                <p>Das Element &lt;link&gt; gibt an, wo sich die CSS-Datei befindet. Dieses Element ist ein leeres Element und wird im head-Element angegeben.</p>
+                <h3>href</h3>
+                <p>Gsibt den Pfad zur CSS-Datei an.</p>
+                <h3>type</h3>
+                <p>Gibt die Art des verknüpften Dokuments an. Bei CSS ist es text/css.</p>
+                <h3>rel</h3>
+                <p>Gibt die Beziehung zwischen der HTML-Seite und der verknüpften Datei an. Hierbei sollte es stylesheet sein.</p>
+                <h2>Interner CSS-Code</h2>
+                <h3>style</h3>
+                <p>Im head-Element kann das style-Element platziert werden, um dann CSS direkt in HTML zu verwenden. Bei diesem Element muss das Attribut type angegeben werden.
+                    Der Wert für dieses Attribut muss text/css lauten. Bei einer Webseite mit mehr als einer Seite ist es empfehlenwert CSS extern einzubinden.
+                </p>
+                </div>
+                <div class="css">
+                <h2>Selektoren</h2>
+                <p>Selektoren sind Ansprechmöglichkeiten mit denen man gezielt Regeln auf bestimmte Elemente anwenden kann.
+                    Bei CSS-Selektoren unterscheidet man zwischen Gross- und Kleinschreibung. Deshalb ist es wichtig, dass Elementnamen und Attributwerte genau übereinstimmen.
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th scope="col">Selektor</th>
+                        <th scope="col">Bedeutung</th>
+                        <th scope="col">Beispiel</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td>Universalselektor</td>
+                        <td>Gilt für alle Elemente im Dokument</td>
+                        <td><b>* {}</b><br> Gilt für alle Elemente auf der Seite</td>
+                    </tr>
+                    <tr>
+                        <td>Typselektor</td>
+                        <td>Gilt für übereinstimmende Elementnamen</td>
+                        <td><b>h1, h2, h3 {}</b><br>Gilt f&uuml;r &lt;h1&gt;-, &lt;h2&gt;- und &lt;h3&gt;-Elemente</td>
+                    </tr>
+                    <tr>
+                        <td>Klassenselektor</td>
+                        <td>Gilt für Elemente, deren Attribut class einen Wert hat, der mit dem hinter dem Punkt angegebenen Wert übereinstimmt</td>
+                        <td><b>.note {}</b><br> Gilt für alle Elemente auf der Seite<br><b>p.note {}</b><br>Gilt nur für &lt;p&gt;-Elemente, deren class-Attribut den Wert note hat</td>
+                    </tr>
+                    <tr>
+                        <td>ID-Selektor</td>
+                        <td>Gilt für Elemente, deren Attribut id einen Wert hat, der mit dem hinter dem Nummernsymbol angegebenen Wert übereinstimmt</td>
+                        <td><b>#introduction {}</b><br> Gilt für Elemente, deren id-Attribut den Wert introduction hat</td>
+                    </tr>
+                    <tr>
+                        <td>Kindselektor</td>
+                        <td>Gilt für Elemente, die dem angegebenen Element unmittelbar untergeordnet sind</td>
+                        <td><b>li>a {}</b><br> Gilt für alle &lt;a&gt;-Elemente, die Kinder eines &lt;li&gt;-Elements sind</td>
+                    </tr>
+                    <tr>
+                        <td>Nachkommenselektor</td>
+                        <td>Gilt für Elemente, die dem angegebenen Element untergeordnet sind</td>
+                        <td><b>p a {}</b><br> Gilt für alle &lt;a&gt;-Elemente innerhalb eines &lt;p&gt;-Elements, auch wenn andere Elemente dazwischen verschachtelt sind</td>
+                    </tr>
+                    <tr>
+                        <td>Selektor für benachbarte Geschwister</td>
+                        <td>Gilt für Elemente, die dem angegebenen Element direkt gleichgeordnet sind</td>
+                        <td><b>h1+p {}</b><br> Gilt für das erste &lt;p&gt;-Element nach einem &lt;h1&gt;-Element</td>
+                    </tr>
+                    <tr>
+                        <td>Allgemeiner Geschwisterselektor</td>
+                        <td>Gilt für Elemente, die dem angegebenen Element gleichgeordnet sind, auch wenn sie nicht direkt aufeinander folgen</td>
+                        <td><b>h1~p {}</b><br> Wenn Sie zwei &lt;p&gt;-Elemente haben, die Geschwister eines &lt;h1&gt;-Elements sind, gilt diese Regel für beide</td>
+                    </tr>
+                </table>
+                </div>
+                <div class="css">
+                <h2>Text</h2>
+                <h3 class="cssh3">Schriftarten angeben</h3>
+                <p>Mit der Eigenschaft font-family kann man die Schriftarten für den Text von Elementen angeben.
+                    Der Wert von font-family ist der Name der gewünschten Schriftart. Ihre ausgewählten Schriftarten müssen auf den Computern Ihrer Besucher installiert sein.
+                    Sie können eine Liste mehrerer, durch Kommata getrennter Schriftarten angeben. Wenn der Besucher die bevorzugte Schrift nicht hat, kann der Browser dann eine alternative Schriftart aus dieser Liste
+                    auswählen.
+                </p>
+                <h3 class="cssh3">Schriftgrösse</h3>
+                <p>Mit der Eigenschaft font-size geben Sie die Grösse der Schrift an, Dazu gibt es mehrere Möglichkeiten. Die wichtigsten sind:</p>
+                <h4>Pixel</h4>
+                <p>Gewöhnlich erfolgt die Angabe in Pixeln, da Webdesigner dadurch eine sehr genaue Kontrolle darüber bekommen, wie viel Platz der Text einnimmt.</p>
+                <h4>Prozentwerte</h4>
+                <p>Die Standardtextgrösse in Browsern beträgt 16 Pixel. Die Grössenangabe von 75% enspricht daher 12 Pixel, und 200% sind 32 Pixel.</p>
+                <h4>EM</h4>
+                <p>Ein em enspricht der Breite des Buchstabens m.</p>
+                <h3 class="cssh3">Fettschrift</h3>
+                <p>Mit der Eigenschaft font-weight können Sie Text fett machen. Diese Eigenschaft übernimmt gewöhnlich einen der beiden folgenden Werte:</p>
+                <h4>normal</h4>
+                <p>Der Text wird in der normalen Stärke dargestellt.</p>
+                <h4>Bold</h4>
+                <p>Der Text erscheint fett.</p>
+                <h3>Kursivschrift</h3>
+                <p>Um Kursivschrift zu verlangen, verwenden Sie die Eigenschaft font-style. Sie kann die folgenden drei Werte annehmen.</p>
+                <h4>normal</h4>
+                <p>Dadurch erscheint der Text in normaler Lage.</p>
+                <h4>italic</h4>
+                <p>Dadurch wird der Text in Schrägschrift gebracht.</p>
+                <h4>oblique</h4>
+                <p>Dadurch wird der Text in Schrägschrift dargestellt, jedoch noch intensiver als bei italic.</p>
+                <h3>Gross- und Kleinschreibung</h3>
+                <p>Mit der Eigenschaft text-transofrm können Sie zwischen Gross- und Kleinbuchstaben umschalten. Hierbei helfen folgende Werte:</p>
+                <h4>uppercase</h4>
+                <p>Der Text erscheint in Grossbuchstaben.</p>
+                <h4>lowercase</h4>
+                <p>Der Text erscheint in Kleinbuchstaben.</p>
+                <h4>capitalize</h4>
+                <p>Der Anfangsbuchstabe jedes Wortes wird grossgeschrieben.</p>
+                <h3>Unterstreichen und Durchstreichen</h3>
+                <p>Für die Eigenschaft text-decoration können Sie folgende Werte angeben:</p>
+                <h4>none</h4>
+                <p>Alle auf den Text angewendeten Ausschmückungen werden entfernt.</p>
+                <h4>underline</h4>
+                <p>Der Text wird unterstrichen.</p>
+                <h4>overline</h4>
+                <p>Es wird eine Linie über dem Text gezogen.</p>
+                <h4>line-through</h4>
+                <p>Die Wörter werden durchgestrichen.</p>
+                <h4>blink</h4>
+                <p>Der Text wird animiert, sodass er blinkt.</p>
+                <h3>Zeilenabstand</h3>
+                <p>Der Teil eines Buchstabens, der unter die Grundlinie hinausgeht, wird als Unterlänge bezeichnet, während der höchste Punkt Oberlänge genannt wird. Der Zeilenabstand
+                    wird vom unteren Rand der Unterlänge einer Zeile zum oberen Rand der Oberlänge der der folgenden Zeile gemessen.
+                </p>
+                <p>In CSS legen Sie mit der Eigenschaft line-height die Höhe einer gesamten Textzeile fest. Der Unterschied zwischen font-size und line-height entspricht daher dem Zeilenabstand.
+                    Wenn Sie den Wert von line-height erhöhen, wird der Abstand zwischen den Textzeilen grösser.
+                </p>
+                <h3>Buchstaben- und Wortabstände</h3>
+                <p>Laufweite ist der Fachbegriss für die Abstände zwischen den Buchstaben. Diesen Aspekt steuern Sie mit der Eigenschaft letter-spacing.</p>
+                <p>Eine Vergrösserung der Laufweite ist dann nützlich, wenn eine Überschrift oder ein Satz vollständig in Grossbuchstaben geschrieben ist. Bei normaler Gross- und Kleinschreibung dagegen kann eine Änderung der Laufweite die Lesbarkeit beeinträchtigen.</p>
+                <p>Mit der Eigenschaft word-spacing können Sie auch die Abstände zwischen den Wörtern regeln.
+                    Die Werte für diese Eigenschaften sollen Sie in em angeben. Sie werden zu dem Standardwert addiert, der für die Schriftart festgelegt ist.
+                </p>
+                <p>Der standardmässige Wortabstand ist in der Schriftart festgelegt (meist 0.25em).</p>
+                <h3>Ausrichtung</h3>
+                <p>Mit text-align legen Sie die Ausrichtung des Textes fest. Diese Eigenschaft kann die folgenden vier Werte annehmen.</p>
+                <h4>left</h4>
+                <p>Der Text wird linksbündig ausgerichtet.</p>
+                <h4>right</h4>
+                <p>Der Text wird rechtsbündig ausgerichtet.</p>
+                <h4>center</h4>
+                <p>Selbsterklärend</p>
+                <h4>justify</h4>
+                <p>Jede Zeile eines Absatzes nimmt die gesamte Breite des umgebenden Kastens ein.</p>
+                <h3>Vertikale Ausrichtung</h3>
+                <p>Die Bezeichnung der Eigenschaft vertical-align führt häufig zu Missverständnissen, denn sie dient nicht dazu, Inhalte vertikal in Blockelementen zu zentrieren.</p>
+                <p>Gewöhnlich wird sie für Inline-Elemente verwendet. Dabei wirkt sie sich ähnlich aus wie das HTML-Attribut align für das img-Element. Sie kann folgende Werte annehmen.</p>
+                <ol class="ul">
+                    <li class="ulli">baseline</li>
+                    <li class="ulli">sub</li>
+                    <li class="ulli">super</li>
+                    <li class="ulli">top</li>
+                    <li class="ulli">text-top</li>
+                    <li class="ulli">middle</li>
+                    <li class="ulli">bottom</li>
+                    <li class="ulli">text-bottom</li>
+                </ol>
+                <h3>Auf Benutzeraktionen reagieren</h3>
+                <p>Es gibt drei Pseudoklassen, mit denen Sie das Erscheinungbild von Elementen in Abhängigkeit von der Benutzerinteraktion ändern können.</p>
+                <h4>:hover</h4>
+                <p>Wird angewandt, wenn der Benutzer mit einem Zeigegeröt wie einer Maus über das Element fährt. Gewöhnlich wird dies dazu genutzt, um das Erscheinungbild von Links und Schaltflächen zu ändern,
+                    wenn der Benutzer den Cursor darüber hält.
+                </p>
+                <h4>:active</h4>
+                <p>Wird angewandt, wenn das Element von einem Benutzer aktiviert wird.</p>
+                <h4>:focus</h4>
+                <p>Wird angewendet, wenn das Element den Fokus hat. Jedes interaktive Element, z.B. ein Link, kann den Fokus bekommen. Ein Element erhält den Fokus, wenn der Browser erkennt,
+                    dass der Benutzer zur Interaktion zu diesem Element bereit ist.
+                </p>
+                <h3>Attributselektoren</h3>
+                <table>
+                        <thead>
+                        <tr>
+                            <th scope="col">Selektor</th>
+                            <th scope="col">Bedeutung</th>
+                            <th scope="col">Beispiel</th>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td>Existenz</td>
+                            <td>Gilt für Elemente mit dem angegebenen Attribut</td>
+                            <td><b>p[class]</b><br>Gilt für alle &lt;p&gt;-Elemente mit dem Attribut class</td>
+                        </tr>
+                        <tr>
+                            <td>Gleichheit</td>
+                            <td>Gilt für Elemente mit dem angegebenen Attribut des angegebenen Werts</td>
+                            <td><b>p[class="dog"]</b><br>Gilt für alle &lt;p&gt;-Elemente mit einem class-Attribut des Werts dog</td>
+                        </tr>
+                        <tr>
+                            <td>Leerzeichen</td>
+                            <td>Gilt für Elemente mit dem angegebenen Attribut, bei dem der angegebene Wert in einer durch Leerzeichen getrennten Liste vorkommt</td>
+                            <td><b>p[class~="dog"]</b><br>Gilt für alle &lt;p&gt;-Elemente mit einem class-Attribut, dessen Wert eine durch Leerzeichen getrennte Liste von Wörtern ist, in der dog vorkommt</td>
+                        </tr>
+                        <tr>
+                            <td>Präfix</td>
+                            <td>Gilt für Elemente mit dem angegebenen Attribut, wenn dessen Wert mit dem angegebenen String beginnt</td>
+                            <td><b>p[attr^="d"]</b><br>Gilt für alle &lt;p&gt;-Elemente mit einem Attribut, dessen Wert mit d beginnt</td>
+                        </tr>
+                        <tr>
+                            <td>Teilstring</td>
+                            <td>Gilt für Elemente mit dem angegebenen Attribut, wenn dessen Wert den angegebenen Teilstring enthält</td>
+                            <td><b>p[attr*="do"]</b><br>Gilt für alle &lt;p&gt;-Elemente mit einem Attribut, dessen Wert die Buchstaben do enthält</td>
+                        </tr>
+                        <tr>
+                            <td>Suffix</td>
+                            <td>Gilt für Elemente mit dem angegebenen Attribut, wenn dessen Wert mit dem angegebenen String endet</td>
+                            <td><b>p[attr$="g"]</b><br>Gilt für alle &lt;p&gt;-Elemente mit einem Attribut, dessen Wert mit dem Buchstaben g endet</td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="css">
+                    <h2>Fonts</h2>
+                    <p>Es gibt viele verschiedene Schriftarten, die man benutzen kann. Die Auswahl ist sehr breit.
+                        Mit Google Fonts erhält man Zugriff auf eine grosse Menge von Schriftarten, welche man auf der eigenen Webseite verwenden kann.
+                        Google Fonts hat die Ladegeschwindigkeiten für Schriftarten optimiert, indem sie die geladenen Schriftarten im Cache des Users speichern. Dieser kann auf allen Webseiten abgerufen werden.
+                    </p>
+                    <h3>Einbetten</h3>
+                    <p>Die Schriftarten können im HTML-Dokument als Stylesheet angegeben werden, mit CSS als Font-Family gesetzt werden oder wieder in HTML als URL importiert werden.</p>
+                    </div>
+                    <div class="css">
+                        <h2>Farbe</h2>
+                        <h3>Vordergrundfarbe</h3>
+                        <p>Mit der Eigenschaft color bestimmen Sie die Farbe des Textes in einem Element. In CSS können Sie Farben auf drei verschiedene Weisen festlegen.</p>
+                        <h4>RGB</h4>
+                        <p>Hiermit werden die Farben durch die Angabe der Menge von Rot, Grün und Blau definiert, aus denen sie sich zusammensetzen, beispielsweise rgb(100,100,90).</p>
+                        <h4>Hex-Codes</h4>
+                        <p>Diese sechsstelligen Codes mit vorangestelltem Nummernzeichen geben ebenfalls den Anteil von Rot, Gründ und Blau einer Farbe an, beispielsweise #ee3e80.</p>
+                        <h4>Farbnamen</h4>
+                        <p>Es gibt 147 vordefinierte Farbnamen, die von Browsern erkannt werden, beispielsweise red.</p>
+                        <h3>Hintergrundfarben</h3>
+                        <p>Mit der Eigenschaft background-color legen Sie die Hintergrundfarbe des Kastens eines Objekts fest.</p>
+                        <p>Wenn Sie keine Hintergrundfarbe angeben, ist der Hintergrund transparent.</p>
+                        <h3>Farben verstehen</h3>
+                        <p>Jede Farbe auf einem Computerbildschirm wird durch eine Mischung verschiedener Anteile von Rot, Gründ und Blau erzeugt. Um die gewünschte Farbe zu finden, können Sie den Farbwähler verwenden.</p>
+                        <p>Computerbildschirme sind aus Tausenden von Pixeln zusammengesetzt.
+                            Wenn der Bildschirm ausgeschaltet ist, erscheint er schwarz, da er kein Licht ausstrahlt. Ist er eingeschaltet, kann jedes Pixel eine andere Farbe wiedergeben, was zusammengenommen das Bild ergibt.
+                        </p>
+                        <h4>Farbton</h4>
+                        <p>Der Farbton ist das, was sich die meisten Menschen unter Farbe vorstellen. Technisch gesehen zeichnet sich eine Farbe zusätzlich jedoch auch durch Sättigung und Helligkeit aus.</p>
+                        <h4>Sättigung</h4>
+                        <p>Die Sättigung gibt den Grauanteil einer Farbe an. Bei maximaler Sättigung enthält die Farbe kein Grau, bei minimaler Sättigung ist sie grösstenteils grau.</p>
+                        <h4>Helligkeit</h4>
+                        <p>Die Helligkeit gibt den Schwarzanteil einer Farbe an. Bei Maximaler Helligkeit enthält die Farbe kein Schwarz, bei minimaler Helligkeit ist sie sehr dunkel.</p>
+                        <h3>Kontrast</h3>
+                        <p>Bei der Auswahl der Vordergrund- und Hintergrundfarbe ist es wichtig, für ausreichenden Kontrast zu sorgen, damit der Text lesbar ist.</p>
+                        <h4>Geringer Kontrast</h4>
+                        <p>Bei geringerem Kontrast zwischen Vordergrund- und Hintergrundfarbe ist Text schlecht lesbar.
+                            Mangelnder Kontrast ist vor allem für Betrachter mit Sehbehinderungen und Farbenblindheit problematisch.
+                        </p>
+                        <h4>Starker Kontrast</h4>
+                        <p>Bei starkem Kontrast zwischen Vordergrund- und Hintergrundfarbe lässt sich der Text besser lesen.</p>
+                        <p>Steht sehr viel Text auf der Seite, kann ein zu starker Kontrast die Lesbarkeit jedoch wiederum reduzieren.</p>
+                        <h4>Mittlerer Kontrast</h4>
+                        <p>Bei langen Textpassagen kann eine geringfügige Verringerung des Kontrastes die Lesbarkeit erhöhen.
+                        </p>
+                        <h3>Deckkraft</h3>
+                        <p>Mit der Eigenschaft opacity können Sie die Deckkraft eines Elements und seiner Kindelemente festlegen. Der Wert ist eine Zahl zwischen 0.0 und 1.0.</p>
+                        <p>Mit der Eigenschaft rgba können Sie eine Farbe über ihren RGB-Wert angeben, in einem vierten Wert aber zusätzlich die Deckkraft festlegen. Dies ist der alpha-Wert.
+                            rgba wirkt sich nicht auf die Kindelemente aus.
+                        </p>
+                        <div class="css">
+                            <h2>Kästen</h2>
+                            <h3>Abmessungen von Kästen</h3>
+                            <p>Normalerweise ist ein Kasten gerade gross genug für seinen Inhalt. Mit den Eigenschaften height und width kann man die Abmessungen selbst festlegen.</p>
+                            <h3>Die Breite einschränken</h3>
+                            <p>Manche Seiten sind so gestaltet, dass sie sich an die Grösse des Benutzerbildschirms anpassen.
+                                Dabei wird mit der Eigenschaft min-width die Mindestbreite angegeben, mit der der Kasten bei schmalem Browserfenster angezeigt werden kann, und mit max-width die Höchstbreite, zu der sich der Kasten in einem breiten Fenster ausdehnen lässt.
+                            </p>
+                        </div>
+                    </div>
+
     </div>
     <div class="praxis" id="praxis">
         <h1>Praxis</h1>

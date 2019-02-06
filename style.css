@@ -141,3 +141,10 @@ dd {
     border-radius: 10px;
     width: 400px;
 }
+td {
+    padding: 15px 7px 15px 7px;
+    text-align: center;
+}
+.line {
+    border-bottom: 2px;
+}
