@@ -1098,6 +1098,71 @@
                             <h4>none</h4>
                             <p>Blendet das Element von der Seite aus. Das Element verhält sich also so, als sei es gar nicht auf der Seite vorhanden.</p>
                         </div>
+                        <div class="css">
+                            <h2>Listen, Tabellen und Formulare</h2>
+                            <p>Neben des CSS-Eigenschaften für die Arbeit mit allen Elementen gibt es auch einige, die eigens zur Gestaltung von Listen, Tabellen und Formularen gedacht sind.</p>
+                            <p>Aufzählungspunkte können Sie mit den Eigenschaften list-style-type und list-style-image gestalten.</p>
+                            <p>Rahmen und Abstände von Tabellenzellen können in den verschiedenen Browsern jeweil unterschiedlich aussehen. Es gibt jedoch Eigenschaften, mit denen Sie für ein einheitlicheres Erscheinungsbild sorgen können.</p>
+                            <p>Formulare lassen sich leichter verwenden, wenn die Steuerelemente mithilfe von CSS vertikal ausgerichtet sind.</p>
+                        </div>
+                        <div class="css">
+                            <h2>Bilder</h2>
+                            <h3>Bilder mit CSS ausrichten</h3>
+                            <p>Statt des Attributs align von &lt;img&gt; verwenden Webautoren immer häufiger float, um Bilder auszurichten. Das geschieht gewöhnlich auf eine der beiden folgenden Arten:</p>
+                            <p>Die Eigenschaft float wird zu der Klasse für die Bildgrösse hinzugefügt.</p>
+                            <p>Zur Ausrichtung der Bilder am linken oder rechten Rand der Seite werden neue Klassen mit Namen wie align-left oder align-right erstellt.</p>
+                            <h3>Hintergrundbilder</h3>
+                            <p>Mit der Eigenschaft backeground-image können Sie ein Bild hinter ein HTML-Element legen - hinter die gesamte oder oder nur hinter einen Teil davon. Standardmässig wird das Hintergrundbild wiederholt angezeigt, um den gesamten Kasten auszufüllen.</p>
+                            <p>Die Angabe des Pfades für das Bild beginnt mit url und steht in Klammern und Anführungszeichen.</p>
+                            <h3>Bild wiederholen</h3>
+                            <p>Die Eigenschaft background-repeat kann folgende vier Werte annehmen:</p>
+                            <h4>repeat</h4>
+                            <p>Das Hintergrundbild wird in horizontaler und in vertikaler Richtung wiederholt angezeigt.</p>
+                            <h4>repeat-x</h4>
+                            <p>Das Bild wird nur horizontal wiederholt.</p>
+                            <h4>repeat-y</h4>
+                            <p>Das Bild wird nur vertikal wiederholt.</p>
+                            <h4>no-repeat</h4>
+                            <p>Das Bild wird nur einmal angezeigt. Die Eigenschaft background-attachment gibt an, ob das Hintergrundbild beim Scrollen in seiner Position verbleiben oder mitwandern soll. Sie kann die folgenden zwei Werte annehmen:</p>
+                            <h5>fixed</h5>
+                            <p>Das Hintergrundbild behält seinen Platz auf der Seite bei.</p>
+                            <h5>scroll</h5>
+                            <p>Das Hintergrundbild bewegt sich beim Scrollen nach oben bzw. unten.</p>
+                        </div>
+                        <div class="css">
+                        <h2>Flexbox</h2>
+                        <p>Flexbox ist ein Tool, das uns hilft Elemente zu positionieren, auszurichten und deren Reihenfolge festzulegen.</p>
+                        <p>Es gibt zwei Arten von Eigenschaften. Solche für den Container selbst und solche für die Inhalte vom Container.
+                            Der Container wird als Elternteil bezeichnet und die Inhalte sind die Kinder (flex items).
+                            Es gibt zwei Achsen mit denen Flex-Items positioniert werden können. Die Hauptachse und die Cross-Axis (sekundäre Achse). Die Hauptachse geht standardmässig von links nach rechts und die Cross-Axis von oben nach unten.
+                            Folgend werden die Eigenschaften für den Container beschrieben:
+                        </p>  
+                        <h3>display</h3>
+                        <p>Die Eigenschaft Display gibt den Container an.</p>
+                        <h3>flex-direction</h3>
+                        <p>Diese Eigenschaft definiert die Richtung der Flex-Items. Ausserdem legt es die Richtung der Hauptachse fest.</p>
+                        <h3>flex-wrap</h3>
+                        <p>Die Flex-Items werden versuchen sich auf eine Zeile zu platzieren. Auch ein Zeilenumbruch ist möglich mit dieser Eigenschaft.</p>
+                        <h3>justify-content</h3>
+                        <p>Richtet die Flex-Elemente entlang der Hauptachse aus. Kann auch Innen- und Aussenabstände unterscheiden, damit die Gleichen sich ausrichten können.</p>
+                        <h3>align-items</h3>
+                        <p>Richtet die Flex-Elemente entlang der Cross-Axis aus. Kann auch Elemente strecken um den Container auszufüllen.</p>
+                        <h3>align-content</h3>
+                        <p>Richtet die Zeilen innerhalb eines Flex-Containers aus, wenn auf der Cross-Axis Platz ist.</p>
+                        <p>Folgend sind die Eigenschaften für die Flex-Items:</p>
+                        <h3>order</h3>
+                        <p>Legt die Reihenfolge der Flex-Items fest.</p>
+                        <h3>flex-grow</h3>
+                        <p>Erlaubt es einem Flex-Item zu "wachsen". Bei Bedarf kann dieses mehr Platz in Anspruch nehmen.</p>
+                        <h3>flex-shrink</h3>
+                        <p>Erlaubt es einem Flex-Item zu "schrumpfen". Es kann also kleiner werden.</p>
+                        <h3>align-self</h3>
+                        <p>Erlaubt die Änderung der Ausrichtung für ein bestimmtes Flex-Item.</p>
+                        </div>
+                        <div class="css">
+                            <h2>Media Queries</h2>
+                            <p>Media Queries wurden erstmals in CSS3 vorgestellt. Hierbei wird die @media-Regel benutzt, um CSS-Regeln zu aktivieren, sobald eine definierte Bedingung erfüllt ist.</p>
+                        </div>
 
     </div>
     <div class="praxis" id="praxis">
