@@ -1049,6 +1049,7 @@
                         <p>Mit der Eigenschaft rgba können Sie eine Farbe über ihren RGB-Wert angeben, in einem vierten Wert aber zusätzlich die Deckkraft festlegen. Dies ist der alpha-Wert.
                             rgba wirkt sich nicht auf die Kindelemente aus.
                         </p>
+                        </div>
                         <div class="css">
                             <h2>Kästen</h2>
                             <h3>Abmessungen von Kästen</h3>
@@ -1057,8 +1058,46 @@
                             <p>Manche Seiten sind so gestaltet, dass sie sich an die Grösse des Benutzerbildschirms anpassen.
                                 Dabei wird mit der Eigenschaft min-width die Mindestbreite angegeben, mit der der Kasten bei schmalem Browserfenster angezeigt werden kann, und mit max-width die Höchstbreite, zu der sich der Kasten in einem breiten Fenster ausdehnen lässt.
                             </p>
+                            <h3>Die Höhe einschränken</h3>
+                            <p>Dazu verwendet man die Eigenschaften min-height und max-height.</p>
+                            <p>Ist der Kasten für den INhalt nicht gross genug, so läuft der Inhalt aus dem Kasten heraus. Um festzulegen, was geschehen soll, wenn es nicht genug Platz
+                                für den Inhalt eines Kastens gibt, wenden Sie die Eigenschaft overflow an.
+                            </p>
+                            <h3>Überlaufender Inhalt</h3>
+                            <p>Die Eigenschaft overflow sagt dem Browser, was er tun soll, wenn der Inhalt eines Kastens grösser ist als der Kasten selbst. Sie kann folgende zwei Werte annehmen.</p>
+                            <h4>hidden</h4>
+                            <p>Der zusätzliche Inhalt, der nicht in den Kasten passt, wird einfach verborgen.</p>
+                            <h4>scroll</h4>
+                            <p>Der Kasten wird mit einem Rollbalken versehen, damit der Benutzer zum zusätzlichen Inhalt scrollen kann.</p>
+                            <p>Die Eigenschaft overflow ist praktisch, da die Benutzer die Textgrösse im Browser nach Belieben einstellen können. Ist der Text zu gross, kann die Seite zu einem unleserlichen Durcheinander werden. Den Überlauf bei solchen Kästen auszublenden, hilft
+                                dabei, eine Überlappung auf der Seite zu verhindern.
+                            </p>
+                            <h3>Rahmen, Innen- und Aussenrand</h3>
+                            <p>Jeder Kasten verfügt über die folgenden drei Eigenschaften, die Sie anpassen können.</p>
+                            <img class="box" src="img/box.png" alt="box-modell">
+                            <p>Diese Eigenschaften sind Margin, Border und Padding. </p>
+                            <h4>Border (Rahmen)</h4>
+                            <p>Jeder Kasten hat einen Rahmen. Der Rahmen trennt die Aussenkante eines Kastens von der eines anderen.</p>
+                            <h4>Margin (Aussenrand)</h4>
+                            <p>Der Aussenrand liegt ausserhalb der Rahmenkante. Die Breite dieses Randes können Sie einstellen, um einene Abstand zwischen den Rahmen zweier angrenzender Kästen zu bilden.</p>
+                            <h4>Padding (Innenrand)</h4>
+                            <p>Der Innenrand ist der Raum zwischen dem Rahmen eines Kastens und dem eingeschlossenen Inhalt. Durch einen Innenrand kann der Inhalt besser lesbar gemacht werden.</p>
+                            <h3>Weissraum und Vertikale Ränder</h3>
+                            <p>Die Eigenschaften padding und margin sind sehr nützlich, um Abstände zwischen den einzelnen Elementen auf einer Seite einzuräumen.</p>
+                            <p>Den Border kann man dicker machen und die Art kann auch definiert werden. Dies wird mit border-width und border-style erreicht.
+                                Auch farbige Rahmen sind möglich, nämlich mit der Eigenschaft border-color.
+                            </p>
+                            <h3>Inline- und Blockelemente umwandeln</h3>
+                            <p>Mit der Eigenschaft display können Sie Inline- un Blockelemente umwandeln und umgekehrt. Display kann folgende Werte annehmen:</p>
+                            <h4>inline</h4>
+                            <p>Sorgt dafür, dass sich ein Blockelement wie ein Inline-Element verhält.</p>
+                            <h4>block</h4>
+                            <p>Sorgt dafür, dass sich ein Inline-Element wie ein Blockelement verhält.</p>
+                            <h4>inline-block</h4>
+                            <p>Sorgt dafür, dass ein Blockelement die Flusseigenschaften eines Linline-Elements annimmt, aber alle anderen Aspekte eines Blockelements beibehält.</p>
+                            <h4>none</h4>
+                            <p>Blendet das Element von der Seite aus. Das Element verhält sich also so, als sei es gar nicht auf der Seite vorhanden.</p>
                         </div>
-                    </div>
 
     </div>
     <div class="praxis" id="praxis">

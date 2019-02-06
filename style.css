@@ -5,7 +5,7 @@ ul {
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
-   
+    position: fixed;
   }
 li {
     float: right;
@@ -147,4 +147,8 @@ td {
 }
 .line {
     border-bottom: 2px;
+}
+.box {
+    border-radius: 10px;
+    width: 500px;
 }
