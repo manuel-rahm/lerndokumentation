@@ -168,3 +168,45 @@ td {
 a {
     text-decoration: none;
 }
+.praxisdrop {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    display: none;
+    margin-top: 1rem;
+    left: 0%;
+}
+.htmldrop {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    display: none;
+    margin-top: 1rem;
+    left: 0%;
+}
+.cssdrop {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    display: none;
+    margin-top: 1rem;
+    left: 0%;
+}
+
+
+
+.praxisdrop:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+.htmldrop:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+.cssdrop:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
