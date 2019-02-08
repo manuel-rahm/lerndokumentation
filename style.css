@@ -11,7 +11,7 @@ li {
     float: right;
     background-color: rgb(179, 179, 179);
     position: relative;
-    border-radius: 25px;
+    border-radius: 0px;
 }
 li a {
     display: flex;
@@ -19,6 +19,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 15px;
 }
 li a:hover {
     background-color: rgb(221, 221, 221);
@@ -41,10 +42,10 @@ li a:hover {
         background-color: rgb(255, 255, 255);
     }
     nav ul {
-        flex-direction: column;
+        display: block;
     }
     li a {
-        justify-content: center;
+       float: left;
     }
 }
 body {
@@ -157,6 +158,10 @@ td {
     border-radius: 10px;
 }
 .wireframe {
+    width: 550px;
+    border-radius: 10px;
+}
+.testprotokoll {
     width: 550px;
     border-radius: 10px;
 }
